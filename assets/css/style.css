@@ -1,0 +1,126 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --bg-blue-1: #11429e;
+    --bg-blue-2: #F6F9FF;
+    --bg-blue-3: #6583b9;
+    --margin-top: 100px;
+}
+
+/*Formação título header*/
+header p {
+    font-size: 1.2rem;
+    color: slategrey;
+}
+
+.container {
+    /*position: fixed;*/
+}
+
+.img-fluid {
+    border-radius: 100px;
+}
+
+.redes-sociais{
+    font-size: 35px;
+    transition: 0.5ms;
+    margin: auto;
+    gap: 20px;
+}
+
+.lista-redes-sociais{
+    display: flex;
+    justify-content: left;
+    font-size: 35px;
+    transition: 0.5ms;
+    margin: auto;
+    gap: 20px;
+}
+
+/*Logo e Nome*/
+.logo-text {
+    font-size: 1.8rem;
+    color: var(--bg-blue-1);
+    font-weight: 800;
+}
+
+.my-mt {
+    margin-top: var(--margin-top);
+}
+
+/*menu header*/
+.nav-item a {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/*títulos das seções*/
+.my-title {
+    color: var(--bg-blue-1);
+    font-weight: 700;
+}
+
+/*cor dos textos soft skills*/
+.bg-blue-2 {
+    background-color: var(--bg-blue-2);
+}
+
+/*texto sobre*/
+.sobre {
+    min-height: 100vh;
+    font-size: 1.3rem;
+}
+
+.sobre li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/*formatação icons hard skills*/
+.icon {
+    font-size: 60px;
+    color: var(--bg-blue-1);
+    margin: 24px 0;
+    transition: .5s;
+}
+
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    background-color: var(--bg-blue-2);
+}
+
+.card:hover .icon {
+    transform: scale(1.5);
+}
+
+textarea {
+    resize: none;
+    height: 130px;
+    background-color: greenyellow;
+}
+
+.rodape{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*Formatação abaixo de 960px*/
+@media(max-width:959px) {
+    #sobre{
+        text-align: center;
+    }
+
+    .lista-redes-sociais{
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+        transition: 0.5ms;
+        margin: auto;
+        gap: 20px;
+    }
+}
