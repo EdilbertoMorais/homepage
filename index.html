@@ -69,60 +69,84 @@
     </header>
     <!--------------------------------- fim header -------------------------------------->
 
-    <main class = "main">
-    <!-------------------------------------- sobre -------------------------------------->
-    <section class = "container sobre my-5" id = "sobre">
-        <div class = "row d-flex align-items-center justify-content-between">
-            <div class = "col-lg-6">
-                <img src = "assets/images/outrasImagens/perfil.jpeg"
-                     alt = "Foto do Edilberto usando óculos e com fundo desfocado" class = "img-fluid">
-            </div>
+    <!--------------------------------- janela modal -------------------------------------->
+    <div class = "modal fade" id = "exampleModal" tabindex = "-1" aria-labelledby = "exampleModalLabel" aria-hidden = "true">
+        <div class = "modal-dialog">
+            <div class = "modal-content">
+                <div class = "modal-header">
+                    <h1 class = "modal-title fs-5" id = "exampleModalLabel">Atenção</h1>
+                    <button type = "button" class = "btn-close" data-bs-dismiss = "modal" aria-label = "Close"></button>
+                </div>
+                <div class = "modal-body">
+                        Esta página está em construção e ainda há muito a ser feito. <p> Ela está disponível em produção para
+                        que você possa acompanhar o desenvolvimento do projeto.
 
-            <div class = "col-lg-6">
-                <h2 class = "my-title display-5">Olá!</h2>
-                <h3 class = "mb-4">Bem-vindo ao meu perfil profissional.</h3>
-                <p>Sou um desenvolvedor de software apaixonado por tecnologia, estou atualmente matriculado no curso de
-                   Análise e Desenvolvimento de Sistemas na FIAP, estou engajado em me tornar um desenvolvedor desde 2021,
-                   onde iniciei meus estudos na plataforma da Alura, buscando me especializar na linguagem Java, voltada
-                   para o desenvolvimento web. Por coincidência do destino, a grade da FIAP usa a linguagem Java e Python
-                   como linguagens didáticas, o que me deu uma grande vantagem, pois, Java era a linguagem base dos meus
-                   estudos. Tive meu primeiro contato com Python, linguagem muito interessante e de fácil entendimento.
-                   <br><br>
-                   Pude aprender prototipagem e modelagem de banco de dados, para complementar tudo o que já havia estudado.
-                   <br><br>
-                   Estou muito empolgado com o curso, e creio que em breve, poderei disseminar o conhecimento aprendido com
-                   meus futuros colegas de trabalho.</p>
-            </div>
-
-            <div class = "redes-sociais mt-3 col-12 ">
-                <h3>Visite minhas redes sociais</h3>
-                <ul class = "lista-redes-sociais mt-2">
-                    <li><a href = "#"><i class = "fab fa-linkedin"></i></a></li>
-                    <li><a href = "#"><i class = "fab fa-github"></i></a></li>
-                    <li><a href = "#"><i class = "fab fa-whatsapp"></i></a></li>
-                </ul>
-            </div>
-
-            <div class = "container curriculo my-5">
-                <h2>Baixar Currículo em PDF</h2>
-                <p>Clique no botão abaixo para baixar o documento</p>
-                <a href = "./assets/outros_arquivos/Edilberto%20Cunha%20-%20Analista%20Desenvolvedor%20Sistemas.pdf"
-                   class = "btn btn-primary" download>
-                    <i class = "fas fa-download"></i> Baixar Documento
-                </a>
+                </div>
+                <div class = "modal-footer">
+                    <button type = "button" class = "btn btn-secondary" data-bs-dismiss = "modal">Fechar</button>
+                </div>
             </div>
         </div>
-    </section>
-        <!------------------------------------ fim sobre -------------------------------------->
+    </div>
 
-        <!---------------------------- formacao academica -------------------------------------->
-    <section class = "container my-5" id = "formacao-academica">
+    <!--------------------------------- fim janela modal -------------------------------------->
+
+
+    <main class = "main">
+    <!-------------------------------------- sobre -------------------------------------->
+        <section class = "container sobre my-5" id = "sobre">
+            <div class = "row d-flex align-items-center justify-content-between">
+                <div class = "col-lg-6">
+                    <img src = "assets/images/outrasImagens/perfil.jpeg"
+                         alt = "Foto do Edilberto usando óculos e com fundo desfocado" class = "img-fluid">
+                </div>
+
+                <div class = "col-lg-6">
+                    <h2 class = "my-title display-5 mt-3">Olá!</h2>
+                    <h3 class = "mb-4">Bem-vindo ao meu perfil profissional.</h3>
+                    <p>Sou um desenvolvedor de software apaixonado por tecnologia, estou atualmente matriculado no curso de
+                       Análise e Desenvolvimento de Sistemas na FIAP, estou engajado em me tornar um desenvolvedor desde 2021,
+                       onde iniciei meus estudos na plataforma da Alura, buscando me especializar na linguagem Java, voltada
+                       para o desenvolvimento web. Por coincidência do destino, a grade da FIAP usa a linguagem Java e Python
+                       como linguagens didáticas, o que me deu uma grande vantagem, pois, Java era a linguagem base dos meus
+                       estudos. Tive meu primeiro contato com Python, linguagem muito interessante e de fácil entendimento.
+                       <br><br>
+                       Pude aprender prototipagem e modelagem de banco de dados, para complementar tudo o que já havia estudado.
+                       <br><br>
+                       Estou muito empolgado com o curso, e creio que em breve, poderei disseminar o conhecimento aprendido com
+                       meus futuros colegas de trabalho.</p>
+                </div>
+
+                <div class = "redes-sociais mt-3 col-12 ">
+                    <h3>Visite minhas redes sociais</h3>
+                    <ul class = "lista-redes-sociais mt-2">
+                        <li><a href = "#"><i class = "fab fa-linkedin"></i></a></li>
+                        <li><a href = "#"><i class = "fab fa-github"></i></a></li>
+                        <li><a href = "#"><i class = "fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class = "baixar-curriculo my-5">
+                    <h2>Baixar Currículo em PDF</h2>
+                    <p>Clique no botão abaixo para baixar o documento</p>
+                    <a href = "./assets/outros_arquivos/Edilberto%20Cunha%20-%20Analista%20Desenvolvedor%20Sistemas.pdf"
+                       class = "btn btn-primary" download>
+                        <i class = "fas fa-download"></i> Baixar Documento
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!------------------------------------ fim sobre -------------------------------------->
+
+    <!---------------------------- formação acadêmica -------------------------------------->
+    <section class = "container escolaridade my-5" id = "formacao-academica">
         <h2 class = "my-title text-center my-mt">Formação Acadêmica</h2>
         <hr>
 
         <div class = "row d-flex align-items-center justify-content-between">
             <div class = "col-lg-6 text-center">
-                <img src = "assets/images/outrasImagens/fiap.png" alt = "" class = "img-fluid">
+                <img src = "assets/images/outrasImagens/fiap.png" alt = "" class = "fiap img-fluid">
             </div>
             <div class = "col-lg-6"><h4 class = "my-title my-4">FIAP - Faculdade de Informática e Administração Paulista</h4>
                     <p>Análise e Desenvolvimento de Sistemas</p>
@@ -130,9 +154,9 @@
             </div>
         </div>
     </section>
-        <!----------------------------fim formacao academica -------------------------------->
+    <!----------------------------fim formação acadêmica -------------------------------->
 
-        <!---------------------------- experiencia profissional -------------------------------------->
+    <!---------------------------- experiencia profissional -------------------------------------->
     <section class = "container my-5" id = "experiencia-profissional">
         <h2 class = "my-title text-center my-mt">Experiência Profissional</h2>
         <hr>
@@ -151,7 +175,7 @@
 
                   <div class = "carousel-inner ">
                     <div class = "carousel-item active">
-                      <img src = "assets/images/xp-profissional/latam.png" class = "d-block w-100" alt = "...">
+                      <img src = "assets/images/xp-profissional/latam.png" class = "latam d-block w-100" alt = "...">
                         <div class = " bg-blue-2 my-2">
                           <h4 class = "my-title my-4">Registro 1</h4>
                           <p class = "mb-5">texto sobre o registro 1</p>
@@ -190,9 +214,9 @@
             </div>
         </div>
     </section>
-        <!----------------------------fim experiencia profissional -------------------------------->
+    <!----------------------------fim experiencia profissional -------------------------------->
 
-        <!-------------------------------------- soft-skills -------------------------------------->
+    <!-------------------------------------- soft-skills -------------------------------------->
     <section class = "container my-5" id = "soft-skills">
         <h2 class = "my-title text-center my-mt">Soft Skills</h2>
         <hr>
@@ -252,9 +276,9 @@
             </div>
         </div>
     </section>
-        <!-------------------------------------- fim soft skills -------------------------------------->
+    <!-------------------------------------- fim soft skills -------------------------------------->
 
-        <!----------------------------------- hard -skills -------------------------------------->
+    <!----------------------------------- hard -skills -------------------------------------->
     <section class = "container my-5" id = "hard-skills">
         <h2 class = "my-title text-center my-mt">Hard Skills</h2>
         <hr>
@@ -324,9 +348,9 @@
 
         </div>
     </section>
-        <!-------------------------------- fim hard-skills -------------------------------------->
+    <!-------------------------------- fim hard-skills -------------------------------------->
 
-        <!----------------------------------- certificados -------------------------------------->
+    <!----------------------------------- certificados -------------------------------------->
     <section class = "container mb-5" id = "certificados">
         <h2 class = "my-title text-center my-mt">Certificados</h2>
         <hr>
@@ -485,8 +509,7 @@
             </div>
         </div>
     </section>
-        <!-------------------------------- fim certificados -------------------------------------->
-    </main>
+    <!-------------------------------- fim certificados -------------------------------------->
 
     <!-------------------------------------- contato -------------------------------------->
     <footer class = "footer">
@@ -583,5 +606,12 @@
     <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity = "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin = "anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+            myModal.show();
+        });
+    </script>
 </body>
 </html>

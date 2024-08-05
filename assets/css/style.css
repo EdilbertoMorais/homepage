@@ -15,10 +15,6 @@ header p {
     color: slategrey;
 }
 
-.container {
-    /*position: fixed;*/
-}
-
 .img-fluid {
     border-radius: 100px;
 }
@@ -77,6 +73,18 @@ header p {
     display: inline-block;
     list-style-type: none;
 }
+
+.escolaridade {
+    font-size: 1.3rem;
+}
+
+.fiap, .latam{
+    width: 60%;
+    height: 60%;
+    border-radius: 100px;
+}
+
+
 
 /*formatação icons hard skills*/
 .icon {
