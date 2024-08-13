@@ -2,160 +2,248 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-  }
-  
-  :root {
-    --bg-blue-1: #11429e;
-    --bg-blue-2: #f6f9ff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --bg-white: #ffffff;
+    --bg-orange: #fc5d1f;
+    --bg-black: #000000;
     --bg-blue-3: #6583b9;
     --margin-top: 100px;
-  
-    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    --surface-color: #f5f5f5b3;
-  }
-  
-  /*Formação título header*/
-  header p {
+    --box-shadow: 0 0.5rem 1rem rgb(248, 97, 38);
+    --surface-color: rgb(0, 0, 0);
+    /*--surface-color: rgb(248, 97, 38);*/
+}
+
+body {
+    background-color: black;
+    color: #f6f9ff;
+}
+
+header p {
     font-size: 1.2rem;
-    color: slategrey;
-  }
-  header.container {
+    color: var(--bg-orange);
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    color: var(--bg-orange);
+}
+
+header.container {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     max-width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.132);
-    /* box-shadow: 0 .5rem 1rem rgba(0,,0,0,.1); */
-    background: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgb(248, 97, 38);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     margin: 0 auto;
     z-index: 1000;
-  
-  }
-  
-  .img-fluid {
+}
+
+.logo-text i {
+    color: var(--bg-orange);
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--bg-white);
+}
+
+/*menu header*/
+.nav-item a {
+    font-size: 18px;
+}
+
+.sobre h2 {
+    color: var(--bg-orange);
+
+}
+
+/*texto sobre*/
+.sobre {
+    min-height: 100vh;
+    font-size: 1.3rem;
+}
+
+.sobre li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.modal-content {
+    background-color: #000000; /* cor desejada */
+    text-align: center;
+    font-size: x-large;
+}
+
+.modal-header {
+    background-color: var(--bg-orange); /* cor desejada */
+}
+
+.modal-title {
+    color: black; /* cor do texto */
+    font-size: xxx-large;
+}
+
+.modal h1 {
+    text-align: center;
+}
+
+.modal-title.fs-3 {
+    font-weight: bold;
+}
+
+.modal-body {
+    color: #ffffff;
+}
+
+.modal-footer button {
+    background-color: var(--bg-orange);
+    color: #000000;
+    font-size: x-large;
+}
+
+.img-fluid {
     border-radius: 100px;
-  }
-  
-  .redes-sociais {
+}
+
+.redes-sociais {
     font-size: 35px;
     transition: 0.5ms;
     margin: auto;
     gap: 20px;
-  }
-  
-  .lista-redes-sociais {
+}
+
+.lista-redes-sociais {
     display: flex;
     justify-content: left;
     font-size: 35px;
     transition: 0.5ms;
     margin: auto;
     gap: 20px;
-  }
-  
-  /*Logo e Nome*/
-  .logo-text {
-    font-size: clamp(1.2rem,2vw,1.8rem);
-    /* font-size: clamp(1.2rem,2vw,1.8rem); */
-    color: var(--bg-blue-1);
+}
+
+.redes-sociais .lista-redes-sociais li a i {
+    color: #ff6600; /* cor desejada */
+}
+
+/* Mudar a cor dos ícones ao passar o mouse */
+.redes-sociais .lista-redes-sociais li a:hover i {
+    color: #ff3300; /* cor desejada ao passar o mouse */
+}
+
+.btn-primary {
+    background-color: var(--bg-orange);
+    border-color: #ff5733;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #ff3300;
+    border-color: #ff3300;
+}
+
+/*Logo e Nome*/
+.logo-text {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    color: var(--bg-white);
     font-weight: 800;
-  }
-  
-  .my-mt {
+}
+
+.my-mt {
     margin-top: var(--margin-top);
-  }
-  
-  /*menu header*/
-  .nav-item a {
+}
+
+/*títulos das seções*/
+.my-title {
+    color: var(--bg-white);
     font-weight: 700;
-    font-size: 18px;
-  }
-  
-  /*títulos das seções*/
-  .my-title {
-    color: var(--bg-blue-1);
-    font-weight: 700;
-  }
-  
-  /*cor dos textos soft skills*/
-  .bg-blue-2 {
-    background-color: var(--bg-blue-2);
-  }
-  
-  /*texto sobre*/
-  .sobre {
-    min-height: 100vh;
+}
+
+.escolaridade {
     font-size: 1.3rem;
-  }
-  
-  .sobre li {
-    display: inline-block;
-    list-style-type: none;
-  }
-  
-  .escolaridade {
-    font-size: 1.3rem;
-  }
-  
-  .fiap,
-  .latam {
+}
+
+.escolaridade p {
+    color: var(--bg-orange);
+}
+
+/*cor dos textos soft e hard skills / rodapé*/
+.bg-black {
+    background-color: var(--bg-black);
+}
+
+.fiap, .latam {
     width: 60%;
     height: 60%;
     border-radius: 100px;
-  }
-  
-  /*formatação icons hard skills*/
-  .icon {
+}
+
+/*formatação icons hard skills*/
+.icon {
     font-size: 60px;
-    color: var(--bg-blue-1);
+    color: var(--bg-white);
     margin: 24px 0;
     transition: 0.5s;
-  }
-  
-  .card {
+}
+
+.card {
     transition: 0.5s;
-  }
-  
-  .card:hover {
-    background-color: var(--bg-blue-2);
-  }
-  
-  .card:hover .icon {
+}
+
+.card:hover {
+    background-color: var(--bg-black);
+}
+
+.card:hover .icon {
     transform: scale(1.5);
-  }
-  
-  textarea {
+}
+
+textarea {
     resize: none;
     height: 130px;
     background-color: greenyellow;
-  }
-  
-  .rodape {
+}
+
+.rodape {
     margin-top: 10px;
     text-align: center;
-  }
-  /* main */
-  .main {
+}
+
+/* main */
+.main {
     padding-top: 108px;
     background: var(--surface-color);
-  
-  }
-  
-  /*Formatação abaixo de 960px*/
-  @media (max-width: 959px) {
+
+}
+
+.footer h3 {
+    color: black;
+}
+
+.bold-text {
+    font-weight: bolder;
+}
+
+/*Formatação abaixo de 960px*/
+@media (max-width: 959px) {
     #sobre {
-      text-align: center;
+        text-align: center;
     }
-  
+
     .lista-redes-sociais {
-      display: flex;
-      justify-content: center;
-      font-size: 35px;
-      transition: 0.5ms;
-      margin: auto;
-      gap: 20px;
+        display: flex;
+        justify-content: center;
+        font-size: 35px;
+        transition: 0.5ms;
+        margin: auto;
+        gap: 20px;
     }
-  }
+}
   
