@@ -17,7 +17,10 @@
   --surface-color: rgb(0, 0, 0);
 }
 
-/* Otimizando a barra de rolagem */
+html, body {
+  overflow-x: hidden; /* Adicionado para evitar a rolagem horizontal */
+}
+
 html::-webkit-scrollbar {
   width: .8rem;
   height: 0.25px;
@@ -67,7 +70,6 @@ header.container {
   color: var(--bg-orange);
 }
 
-/*Logo e Nome*/
 .logo-text {
   font-size: clamp(1.2rem, 2vw, 1.8rem);
   color: var(--bg-white);
@@ -78,7 +80,6 @@ header.container {
   color: var(--bg-white);
 }
 
-/*menu header*/
 .nav-item a {
   font-size: 18px;
 }
@@ -87,7 +88,6 @@ header.container {
   color: var(--bg-orange);
 }
 
-/*texto sobre*/
 .sobre {
   min-height: 100vh;
   font-size: 1.3rem;
@@ -99,17 +99,17 @@ header.container {
 }
 
 .modal-content {
-  background-color: #000000; /* cor desejada */
+  background-color: #000000;
   text-align: center;
   font-size: x-large;
 }
 
 .modal-header {
-  background-color: var(--bg-orange); /* cor desejada */
+  background-color: var(--bg-orange);
 }
 
 .modal-title {
-  color: black; /* cor do texto */
+  color: black;
   font-size: xxx-large;
 }
 
@@ -144,7 +144,8 @@ header.container {
 
 .lista-redes-sociais {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
+  align-items: start;
   font-size: 35px;
   transition: 0.5ms;
   margin: auto;
@@ -152,12 +153,11 @@ header.container {
 }
 
 .redes-sociais .lista-redes-sociais li a i {
-  color: #ff6600; /* cor desejada */
+  color: #ff6600;
 }
 
-/* Mudar a cor dos ícones ao passar o mouse */
 .redes-sociais .lista-redes-sociais li a:hover i {
-  color: #ff3300; /* cor desejada ao passar o mouse */
+  color: #ff3300;
 }
 
 .btn-primary {
@@ -175,7 +175,6 @@ header.container {
   margin-top: var(--margin-top);
 }
 
-/*títulos das seções*/
 .my-title {
   color: var(--bg-white);
   font-weight: 700;
@@ -190,7 +189,7 @@ header.container {
 }
 
 .escolaridade p {
-    color: var(--bg-white);
+  color: var(--bg-white);
 }
 
 .carousel-inner h4, h5 {
@@ -213,7 +212,7 @@ header.container {
 
 .carousel-inner img {
   width: 60%;
-  height:60%;
+  height: auto; /* Ajustado para manter a proporção */
   border-radius: 100px;
 }
 
@@ -232,9 +231,8 @@ header.container {
 }
 
 .carousel-control-next {
-  right: -3rem; /* Ajuste este valor conforme necessário */
+  right: -1.5rem;
 }
-
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -247,12 +245,10 @@ header.container {
   background-color: var(--bg-orange);
 }
 
-/*cor dos textos soft e hard skills / rodapé*/
 .bg-black {
   background-color: var(--bg-black);
 }
 
-/*formatação icons hard skills*/
 .icon {
   font-size: 60px;
   color: var(--bg-orange);
@@ -263,7 +259,7 @@ header.container {
 .card {
   transition: 0.5s;
   background-color: black;
-  color: var(--bg-orange);
+  color: var(--bg-white);
 }
 
 .card:hover {
@@ -277,7 +273,6 @@ header.container {
 textarea {
   resize: none;
   height: 130px;
-  background-color: deeppink;
 }
 
 .rodape {
@@ -285,23 +280,19 @@ textarea {
   text-align: center;
 }
 
-/* main */
 .main {
   padding-top: 108px;
   background: var(--surface-color);
 }
 
 .footer h3 {
-  color: black;
+  color: var(--bg-orange);
 }
 
 .bold-text {
   font-weight: bolder;
 }
 
-/**
- * Início --- Button ScrollTop
- */
 .scrollTop {
   display: none;
   position: fixed;
@@ -330,22 +321,18 @@ textarea {
 .scrollTop:hover {
   background-color: var(--bg-orange-dark);
 }
-/**
- * Fim --- Button ScrollTop
- */
 
-/*Formatação abaixo de 960px*/
+.rodape {
+  color: var(--bg-white);
+}
+
+/* Formatação abaixo de 960px */
 @media (max-width: 959px) {
   #sobre {
     text-align: center;
   }
 
   .lista-redes-sociais {
-    display: flex;
     justify-content: center;
-    font-size: 35px;
-    transition: 0.5ms;
-    margin: auto;
-    gap: 20px;
   }
 }
