@@ -12,21 +12,18 @@
   --bg-orange: #fc5d1f;
   --bg-orange-dark: #ff3300;
   --bg-black: #000000;
-  --bg-blue-3: #6583b9;
-  --margin-top: 100px;
+  --margin-top: 10px;
   --box-shadow: 0 0.5rem 1rem rgb(248, 97, 38);
   --surface-color: rgb(0, 0, 0);
-  /*--surface-color: rgb(248, 97, 38);*/
 }
 
-/* Otimizando a bararra de rolagem */
+/* Otimizando a barra de rolagem */
 html::-webkit-scrollbar {
   width: .8rem;
   height: 0.25px;
 }
 html::-webkit-scrollbar-track {
-  /* background: inset 0 0 5px #a5aaad; */
-  background: var(--bg-white);
+  background: var(--bg-black);
 }
 html::-webkit-scrollbar-thumb {
   background: var(--bg-orange);
@@ -68,6 +65,13 @@ header.container {
 
 .logo-text i {
   color: var(--bg-orange);
+}
+
+/*Logo e Nome*/
+.logo-text {
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  color: var(--bg-white);
+  font-weight: 800;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -167,13 +171,6 @@ header.container {
   border-color: #ff3300;
 }
 
-/*Logo e Nome*/
-.logo-text {
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
-  color: var(--bg-white);
-  font-weight: 800;
-}
-
 .my-mt {
   margin-top: var(--margin-top);
 }
@@ -188,8 +185,66 @@ header.container {
   font-size: 1.3rem;
 }
 
-.escolaridade p {
+.escolaridade h4 {
   color: var(--bg-orange);
+}
+
+.escolaridade p {
+    color: var(--bg-white);
+}
+
+.carousel-inner h4, h5 {
+  color: var(--bg-orange);
+  text-align: center;
+}
+
+.carousel-inner ul {
+  align-items: flex-start;
+  font-size: large;
+}
+
+.mb-5::before {
+  all: unset;
+}
+
+.col-lg-10::before {
+  all: unset;
+}
+
+.carousel-inner img {
+  width: 60%;
+  height:60%;
+  border-radius: 100px;
+}
+
+.carousel-indicators button:hover,
+.carousel-indicators .active {
+  background-color: var(--bg-orange);
+}
+
+.carousel-control-next, .carousel-control-prev {
+  height: 2rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 290px;
+}
+
+.carousel-control-next {
+  right: -3rem; /* Ajuste este valor conforme necessário */
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  background-size: 100%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: var(--bg-orange);
 }
 
 /*cor dos textos soft e hard skills / rodapé*/
@@ -197,23 +252,18 @@ header.container {
   background-color: var(--bg-black);
 }
 
-.fiap,
-.latam {
-  width: 60%;
-  height: 60%;
-  border-radius: 100px;
-}
-
 /*formatação icons hard skills*/
 .icon {
   font-size: 60px;
-  color: var(--bg-white);
+  color: var(--bg-orange);
   margin: 24px 0;
   transition: 0.5s;
 }
 
 .card {
   transition: 0.5s;
+  background-color: black;
+  color: var(--bg-orange);
 }
 
 .card:hover {
@@ -227,7 +277,7 @@ header.container {
 textarea {
   resize: none;
   height: 130px;
-  background-color: greenyellow;
+  background-color: deeppink;
 }
 
 .rodape {
