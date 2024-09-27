@@ -194,7 +194,7 @@ header.container {
 }
 
 .carousel-inner h4,
-h5 {
+h5, h6 {
   color: var(--bg-orange);
   text-align: center;
 }
@@ -208,16 +208,17 @@ h5 {
   all: unset;
 }
 
-.col-lg-10::before {
+.col-lg-6::before {
   all: unset;
 }
+
 .carousel-inner {
-  border-radius: 100px;
+  border-radius: 20px;
 }
 .carousel-inner img {
   width: 60%;
   height: auto; /* Ajustado para manter a proporção */
-  border-radius: 100px;
+  border-radius: 16px;
 }
 
 .carousel-indicators button:hover,
@@ -227,7 +228,7 @@ h5 {
 
 .carousel-control-next,
 .carousel-control-prev {
-  height: 2rem;
+  height: 1.5rem;
 }
 
 .carousel-control-prev,
@@ -237,13 +238,21 @@ h5 {
 }
 
 .carousel-control-next {
-  right: -1.5rem;
+  right: 1.5rem;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: black;
   background-size: 100%;
+}
+
+.carousel-control-prev {
+  left: calc(10%); /* Espaçamento das bordas da imagem */
+}
+
+.carousel-control-next {
+  right: calc(3.5%); /* Espaçamento das bordas da imagem */
 }
 
 .carousel-control-prev-icon:hover,
