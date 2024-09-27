@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Edilberto Cunha de Morais</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous"
+    />
+
+    <!-- Minha CSS -->
+    <link rel="stylesheet" href="../../css/style.css"/>
+</head>
+
+<body>
+<!--------------------------------- header da página -------------------------------------->
+<header class="container mt-0 mb-5">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container">
+            <div class="logo-text">
+                <i class="bi bi-person-bounding-box"></i> Edilberto Cunha
+                <p>Desenvolvedor Full Stack</p>
+            </div>
+
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formacao-academica">Formação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia-profissional"
+                        >Experiência Profissional</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#soft-skills">Soft Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hard-skills">Hard Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificados">Certificados </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--------------------------------- fim header -------------------------------------->
+
+<!--------------------------------- janela modal -------------------------------------->
+<div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalLabel">Atenção</h1>
+                <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                Esta página está em construção e ainda há muito a ser feito.
+                <p>
+                    Ela está disponível em produção para que você possa acompanhar o
+                    desenvolvimento do projeto.
+                </p>
+            </div>
+
+            <div class="modal-footer">
+                <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                >
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------------- fim janela modal -------------------------------------->
+
+<!-------------------------------------- sobre -------------------------------------->
+<main class="main">
+    <section class="container sobre my-5" id="sobre">
+        <div class="row d-flex align-items-center justify-content-between">
+            <div class="col-lg-6">
+                <img
+                        src="../outrasImagens/perfil.jpeg"
+                        alt="Foto do Edilberto usando óculos, uma camisa preta e com fundo desfocado"
+                        class="img-fluid"
+                />
+            </div>
+
+            <div class="col-lg-6">
+                <h2 class="my-title display-5 mt-3 bold-text">Olá!</h2>
+                <h3 class="mb-4 bold-text">
+                    Bem-vindo ao meu perfil profissional.
+                </h3>
+                <p>
+                    Sou um desenvolvedor de software apaixonado por tecnologia, estou
+                    atualmente matriculado no curso de Análise e Desenvolvimento de
+                    Sistemas na FIAP, estou engajado em me tornar um desenvolvedor
+                    desde 2021, onde iniciei meus estudos na plataforma da Alura,
+                    buscando me especializar na linguagem Java, voltada para o
+                    desenvolvimento web. Por coincidência do destino, a grade da FIAP
+                    usa a linguagem Java e Python como linguagens didáticas, o que me
+                    deu uma grande vantagem, pois, Java era a linguagem base dos meus
+                    estudos. Tive meu primeiro contato com Python, linguagem muito
+                    interessante e de fácil entendimento. <br/><br/>
+                    Pude aprender prototipagem e modelagem de banco de dados, para
+                    complementar tudo o que já havia estudado.
+                    <br/><br/>
+                    Estou muito empolgado com o curso, e creio que em breve, poderei
+                    disseminar o conhecimento aprendido com meus futuros colegas de
+                    trabalho.
+                </p>
+            </div>
+
+            <div class="redes-sociais mt-3 col-12">
+                <h3 class="bold-text">Visite minhas redes sociais</h3>
+                <ul class="lista-redes-sociais mt-2">
+                    <li>
+                        <a
+                                href="https://www.linkedin.com/in/edilbertocmorais/"
+                                target="_blank"
+                        ><i class="fab fa-linkedin"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/EdilbertoMorais" target="_blank"
+                        ><i class="fab fa-github"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/5511981488561" target="_blank"
+                        ><i class="fab fa-whatsapp"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="baixar-curriculo my-5">
+                <h2>Baixar Currículo em PDF</h2>
+                <p>Clique no botão abaixo para baixar o documento</p>
+                <a
+                        href="../../outros_arquivos/Edilberto%20Cunha%20-%20Analista%20Desenvolvedor%20Sistemas.pdf"
+                        class="btn btn-primary"
+                        download
+                >
+                    <i class="fas fa-download"></i> Baixar Documento
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<!------------------------------------ fim sobre -------------------------------------->
+
+<!---------------------------- formação acadêmica -------------------------------------->
+<section class="container escolaridade" id="formacao-academica">
+    <h2 class="my-title text-center my-mt">Formação Acadêmica</h2>
+    <hr/>
+
+    <div class="row d-flex align-items-center justify-content-between">
+        <div class="col-lg-6 text-center">
+            <img
+                    src="../outrasImagens/fiap.png"
+                    alt=""
+                    class="fiap img-fluid"
+            />
+        </div>
+        <div class="col-lg-6">
+            <h4 class="my-title my-4">
+                FIAP - Faculdade de Informática e Administração Paulista
+            </h4>
+            <p>Análise e Desenvolvimento de Sistemas</p>
+            <p>JAN 2024 - DEZ 2025</p>
+        </div>
+    </div>
+</section>
+<!----------------------------fim formação acadêmica -------------------------------->
+
+<!---------------------------- experiencia profissional -------------------------------------->
+<section class="container my-5" id="experiencia-profissional1">
+    <h2 class="my-title text-center my-mt">Experiência Profissional</h2>
+    <hr/>
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-lg-10 bi-text-left my-2">
+          <div
+                    id="carouselxp-profissional"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                    data-bs-interval="4000"
+            >
+                <div class="carousel-indicators">
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="3"
+                            aria-label="Slide 4"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="4"
+                            aria-label="Slide 5"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="5"
+                            aria-label="Slide 6"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="6"
+                            aria-label="Slide 7"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="7"
+                            aria-label="Slide 8"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="8"
+                            aria-label="Slide 9"
+                    ></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                                src="../xp-profissional/latam.png"
+                                class="latam d-block w-100"
+                                alt="emblema da empresa latam linhas aereas"
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">
+                                TAM LINHAS AÉREAS S/A - MAI/2024 - DATA ATUAL
+                            </h4>
+                            <h5 class="my-title my-4">Auxiliar de Operações de Cargas</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>
+                                    Atendimento ao Cliente: Proporcionar um atendimento de
+                                    excelência, assistindo os clientes com suas necessidades e
+                                    garantindo uma experiência positiva.
+                                </li>
+                                <li>
+                                    Conferência Documental: Verificar e validar a documentação
+                                    necessária para o embarque de cargas aéreas, assegurando
+                                    conformidade com as regulamentações.
+                                </li>
+                                <li>
+                                    Aceitação de Cargas: Realizar o processo de aceitação de
+                                    cargas, seguindo rigorosamente os procedimentos e normas
+                                    de segurança da aviação civil.
+                                </li>
+                                <li>
+                                    Apoio Operacional: Oferecer suporte operacional às demais
+                                    áreas envolvidas no processo logístico, garantindo a
+                                    fluidez e eficiência das operações.
+                                </li>
+                                <li>
+                                    Inspeção e Manuseio de Cargas: Participar das atividades
+                                    de inspeção e manuseio de cargas, assegurando que sejam
+                                    realizadas conforme os padrões de segurança e qualidade
+                                    estabelecidos.
+                                </li>
+                                <li>
+                                    Comunicação e Relacionamento Interpessoal: Manter uma
+                                    comunicação eficaz e um bom relacionamento com colegas de
+                                    trabalho, clientes e demais stakeholders, promovendo um
+                                    ambiente de trabalho harmonioso e produtivo
+                                </li>
+                                <li>
+                                    Gestão de Problemas: Identificar e resolver problemas
+                                    operacionais de forma proativa, garantindo a continuidade
+                                    e eficiência das operações.
+                                </li>
+                                <li>
+                                    Esta função exige um compromisso constante com a
+                                    excelência, a segurança e a satisfação do cliente,
+                                    contribuindo significativamente para o sucesso das
+                                    operações logísticas da Latam Airlines.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                                src="../xp-profissional/solfacil.png"
+                                class="solfacil d-block w-100"
+                                alt="emblema da empresa solfacil energia solar"
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">
+                                SOLFACIL ENERGIA SOLAR TECN. E SERV FINANCEIROS LTDA -
+                                MAI/2022 - DEZ/2022
+                            </h4>
+                            <h5 class="my-title my-4">
+                                Analista de Desenvolvimento de Sistemas
+                            </h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>
+                                    Responsável por acompanhar e desenvolver atividades na
+                                    área de tecnologia da informação, envolvendo a análise e
+                                    desenvolvimento de sistemas.
+                                </li>
+                                <li>Realizar testes em software.</li>
+                                <li>
+                                    Aprimorar o conhecimento dos negócios, produtos e serviços
+                                    da empresa.
+                                </li>
+                                <li>
+                                    Utilizando metodologias ágeis para alavancar a
+                                    produtividade da equipe, pude contribuir para um projeto
+                                    de gamificação que visava aumentar o fluxo de compras da
+                                    loja virtual da empresa, onde os parceiros recebiam pontos
+                                    extras por compras realizadas na plataforma.
+                                </li>
+                                <li>
+                                    Principal resultado: Aumento de 18% nas compras feitas
+                                    pelos parceiros antigos a implantação do serviço e um
+                                    crescimento de 33% em novas parcerias.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                                src="../xp-profissional/toniato.png"
+                                class="toniato d-block w-100"
+                                alt="imagem dos caminhões da frota da empresa toniato transportes"
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">
+                                TRANSPORTE TONIATO LTDA - 07/2019 - 07/2021
+                            </h4>
+                            <h5 class="my-title my-4">Analista Operacional Sênior</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>Controle de gestão de frota própria e agregados.</li>
+                                <li>Gestão documental de veículos e motoristas.</li>
+                                <li>
+                                    Acompanhamento de produtividade da frota própria e
+                                    parceiros.
+                                </li>
+                                <li>Contratação de agregados e parceiros.</li>
+                                <li>Acompanhamento de desempenho de veículos.</li>
+                                <li>
+                                    Controle e validação de pagamentos e implantação de
+                                    logística reversa.
+                                </li>
+                                <li>
+                                    Principal resultado: incremento mensal médio de 98 mil
+                                    reais/mês ao captar frete reverso, contribuindo para o
+                                    aumento do faturamento da unidade.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                                src="../xp-profissional/jsl.png"
+                                class="jsl d-block w-100"
+                                alt="emblema da empresa jsl s/a"
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">JSL S/A - NOV/2015 - ABR/2019</h4>
+                            <h5 class="my-title my-4">Analista de Logística Sênior</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>Controle de agregados e captação de agregados.</li>
+                                <li>Análise e distribuição de demandas.</li>
+                                <li>
+                                    Liderança de equipe com foco em contratação de novos
+                                    agregados.
+                                </li>
+                                <li>Apoio direto a coordenação.</li>
+                                <li>Análise de mercado e divulgação de vagas.</li>
+                                <li>Acompanhamento e análise de metas.</li>
+                                <li>Gestão documental de veículos e motoristas.</li>
+                                <li>
+                                    Válidação e acompanhamento de treinamentos como MOPP,
+                                    Programa Olho Vivo na Estrada, Direção Defensiva, entre
+                                    outros.
+                                </li>
+                                <li>
+                                    Controle de Check List de manutenção, CIV, opacidade,
+                                    ruído, CNH, CRLV, ASO.
+                                </li>
+                                <li>Atendimento ao cliente.</li>
+                                <li>Negociação com empresas parceiras para apoio.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                                src="../xp-profissional/transbrasiliana.png"
+                                class="transbrasiliana d-block w-100"
+                                alt="imagem dos caminhões da empresa transbrasiliana"
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">
+                                TRANSBRASILIANA ENCOMENDAS E CARGAS LTDA - DEZ/2014 -
+                                MAI/2015
+                            </h4>
+                            <h5 class="my-title my-4">Encarregado de Depósito</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>Gestão de pessoal.</li>
+                                <li>Acompanhamento de coleta e entregas.</li>
+                                <li>Roteirização e distribuição de demanda.</li>
+                                <li>Acompanhamento de armazenagem de cargas.</li>
+                                <li>Negociações comerciais com clientes e parceiros.</li>
+                                <li>Emissão de documentações pertinentes ao transporte.</li>
+                                <li>
+                                    Gestão de gastos e faturamento da unidade com foco na
+                                    redução de custos.
+                                </li>
+                                <li>Fechamento de caixa da filial.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                                src="../xp-profissional/voepass.png"
+                                class="voepass d-block w-100"
+                                alt="imagem do atr da passaredo iniciando decolagem"
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">
+                                PASSAREDO LINHAS AÉREAS - JUN/2013 - NOV/2014
+                            </h4>
+                            <h5 class="my-title my-4">Despachante de Cargas Líder</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>Gestão de pessoal.</li>
+                                <li>Acompanhamento de embarque e desembarque de cargas.</li>
+                                <li>
+                                    Acompanhamento dos gastos da filial com foco em redução de
+                                    custos.
+                                </li>
+                                <li>
+                                    Fechamento faturamento filial e prestação de contas ao
+                                    departamento financeiro.
+                                </li>
+                                <li>Negociações comerciais com clientes e parceiros.</li>
+                                <li>Captação de novos clientes.</li>
+                                <li>
+                                    Emissão de documentações pertinentes ao transporte aéreo.
+                                </li>
+                                <li>
+                                    Acompanhamento de desempenho dos prestadores de serviço.
+                                </li>
+                                <li>
+                                    Abertura de novas bases e implementação de processos
+                                    operacionais.
+                                </li>
+                                <li>
+                                    Treinamento de novos colaboradores, garantindo a
+                                    integração e a eficácia das equipes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                                src="../xp-profissional/trip.png"
+                                class="trip d-block w-100"
+                                alt="imagem do art72 da trip linhas aereas taxiando apos o pouso"
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">
+                                TRIP LINHAS AÉREAS - AGO/2011 - DEZ/2012
+                            </h4>
+                            <h5 class="my-title my-4">Despachante de Cargas</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>
+                                    Aceitação e conferência de mercadorias para transporte.
+                                </li>
+                                <li>Negociações comerciais com clientes.</li>
+                                <li>Captação de novos clientes.</li>
+                                <li>
+                                    Emissão de documentações pertinentes ao transporte aéreo.
+                                </li>
+                                <li>
+                                    Acompanhamento de embarque e desembarque de cargas nas
+                                    aeronaves.
+                                </li>
+                                <li>
+                                    Triagem de cargas para embarque conforme data de entrada
+                                    no terminal.
+                                </li>
+                                <li>
+                                    Orientação da equipe para carregamento conforme
+                                    prioridades.
+                                </li>
+                                <li>
+                                    Treinamento de novos colaboradores, garantindo a
+                                    integração, padronização e a eficácia das equipes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                                src="../xp-profissional/vip.png"
+                                class="vip d-block w-100"
+                                alt="logo da empresa vip cargas"
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">
+                                VIP TRANSPORTES DE CARGAS LTDA - ABR/2010 - JUL/2011
+                            </h4>
+                            <h5 class="my-title my-4">Supervisor Operacional</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>Gestão de pessoal.</li>
+                                <li>
+                                    Aceitação e conferência de mercadorias para transporte.
+                                </li>
+                                <li>Negociações comerciais com clientes.</li>
+                                <li>Atendimento ao cliente.</li>
+                                <li>Captação de novos clientes.</li>
+                                <li>Gestão operacional.</li>
+                                <li>
+                                    Acompanhamento de emissões de documentação pertinente ao
+                                    transporte rodo aéreo.
+                                </li>
+                                <li>
+                                    Acompanhamento de triagem de cargas para entrega conforme
+                                    data de entrada no armazém.
+                                </li>
+                                <li>Roteirização e distribuição de demanda.</li>
+                                <li>
+                                    Treinamento de novos colaboradores, garantindo a
+                                    integração, padronização e a eficácia das equipes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                                src="../xp-profissional/tam.png"
+                                class="tam d-block w-100"
+                                alt="aeronave da tam em processo de decolagem"
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">
+                                TAM LINHAS AÉREAS S/A - FEV/2006 - ABR/2010
+                            </h4>
+                            <h5 class="my-title my-4">Despachante de Cargas</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>
+                                    Aceitação e conferência de mercadorias para transporte.
+                                </li>
+                                <li>Atendimento ao cliente.</li>
+                                <li>
+                                    Emissão de documentações pertinentes ao transporte aéreo.
+                                </li>
+                                <li>
+                                    Acompanhamento de embarque e desembarque de cargas nos
+                                    equipamentos.
+                                </li>
+                                <li>
+                                    Triagem de cargas para embarque conforme data de entrada
+                                    no terminal.
+                                </li>
+                                <li>
+                                    Orientação da equipe para carregamento conforme
+                                    prioridades.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselxp-profissional"
+                        data-bs-slide="prev"
+                >
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="orange"
+                            viewBox="0 0 30 16"
+                    >
+                        <path
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z"
+                        />
+                    </svg>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselxp-profissional"
+                        data-bs-slide="next"
+                >
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="orange"
+                            viewBox="0 0 30 16"
+                    >
+                        <path
+                                d="M4.646 1.646a.5.5 0 0 0 0 .708L9.293 7l-4.647 4.646a.5.5 0 0 0 .708.708l5-5a.5.5 0 0 0 0-.708l-5-5a.5.5 0 0 0-.708 0z"
+                        />
+                    </svg>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!----------------------------fim experiencia profissional -------------------------------->
+
+<!-------------------------------------- soft-skills -------------------------------------->
+<section class="container my-5" id="soft-skills">
+    <h2 class="my-title text-center my-mt">Soft Skills</h2>
+    <hr/>
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-lg-6 text-center my-2">
+            <div id="carousel-soft-skill" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-indicators">
+                    <button
+                            type="button"
+                            data-bs-target="#carousel-soft-skill"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carousel-soft-skill"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carousel-soft-skill"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                    ></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                                src="../carousel/pexels-christina-morillo-1181610.jpg"
+                                class="d-block w-100"
+                                alt="..."
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">Soft SKill 1</h4>
+                            <p class="mb-5">texto sobre a soft skill 1</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                                src="../carousel/pexels-cottonbro-studio-7437489.jpg"
+                                class="d-block w-100"
+                                alt="..."
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">Soft SKill 2</h4>
+                            <p class="mb-5">texto sobre a soft skill 2</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                                src="../carousel/pexels-thirdman-5257759.jpg"
+                                class="d-block w-100"
+                                alt="..."
+                        />
+                        <div class="bg-black my-2">
+                            <h4 class="my-title my-4">Soft SKill 3</h4>
+                            <p class="mb-5">texto sobre a soft skill 3</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel-soft-skill"
+                        data-bs-slide="prev"
+                >
+              <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+              ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel-soft-skill"
+                        data-bs-slide="next"
+                >
+              <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+              ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------------- fim soft skills -------------------------------------->
+
+<!----------------------------------- hard -skills -------------------------------------->
+<section class="container my-5" id="hard-skills">
+    <h2 class="my-title text-center my-mt">Hard Skills</h2>
+    <hr/>
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-lg-4 my-2">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-shield-halved icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">SKILL</h5>
+                    <p class="card-text">Texto da SKILL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 my-2">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-code icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">SKILL</h5>
+                    <p class="card-text">Texto da SKILL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 my-2">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-database icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">SKILL</h5>
+                    <p class="card-text">Texto da SKILL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 my-2">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-coins icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">SKILL</h5>
+                    <p class="card-text">Texto da SKILL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 my-2">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-building-shield icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">SKILL</h5>
+                    <p class="card-text">Texto da SKILL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 my-2">
+            <div class="card text-center p-4">
+                <i class="fa-solid fa-diagram-project icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">SKILL</h5>
+                    <p class="card-text">Texto da SKILL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------- fim hard-skills -------------------------------------->
+
+<!----------------------------------- certificados -------------------------------------->
+<section class="container mb-5" id="certificados">
+    <h2 class="my-title text-center my-mt">Certificados</h2>
+    <hr/>
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-lg-3 my-2">
+            <div class="card text-center">
+                <img
+                        src="../certificados/PostgreSQL.png"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h4 class="my-title my-3">PostgreSQL</h4>
+                    <ul>
+                        <li>Conteúdo</li>
+                        <li>Conteúdo</li>
+                        <li>Conteúdo</li>
+                        <li>Conteúdo</li>
+                    </ul>
+                    <div class="mt-5">
+                        <a href="#" class="btn btn-primary">Mais informações</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 my-2">
+            <div class="card text-center">
+                <img
+                        src="../certificados/PostgreSQL.png"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h4 class="my-title my-3">PostgreSQL</h4>
+                    <ul>
+                        <li>Conteúdo</li>
+                        <li>Conteúdo</li>
+                        <li>Conteúdo</li>
+                        <li>Conteúdo</li>
+                    </ul>
+                    <div class="mt-5">
+                        <a href="#" class="btn btn-primary">Mais informações</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 my-2">
+            <div class="card text-center">
+                <img
+                        src="../certificados/PostgreSQL.png"
+                        class="card-img-top"
+                        alt="..."
+                />
+                <div class="card-body">
+                    <h4 class="my-title my-3">PostgreSQL</h4>
+                    <ul>
+                        <li>Conteúdo</li>
+                        <li>Conteúdo</li>
+                        <li>Conteúdo</li>
+                        <li>Conteúdo</li>
+                    </ul>
+                    <div class="mt-5">
+                        <a href="#" class="btn btn-primary">Mais informações</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------- fim certificados -------------------------------------->
+<!------------------------- Button ScrollTop --------------------------->
+<button type="button" class="scrollTop" title="Botão ScrollTop">
+    <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<!-------------------------------------- contato -------------------------------------->
+<footer class="footer">
+    <hr/>
+    <section class="container-fluid" id="contato">
+        <div class="container py-1">
+            <h3 class="text-center my-title mb-5">Informações para contato:</h3>
+            <div class="row mt-1">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-location-dot icon-contato"></i>
+                            </p>
+                            <h3>Endereço</h3>
+                            <p>
+                                Parque Santos Dumont <br/>
+                                Guarulhos - SP
+                            </p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-phone icon-contato"></i>
+                            </p>
+                            <h3>Telefone</h3>
+                            <p>(11) 98148-8561</p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-envelope icon-contato"></i>
+                            </p>
+                            <h3>Email</h3>
+                            <p>edilbertocmorais@gmail.com.br <br/></p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-clock icon-contato"></i>
+                            </p>
+                            <h3>Atendimento</h3>
+                            <p>
+                                Todos os dias <br/>
+                                15:00 - 21:00
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="">
+                        <div class="row text-start">
+                            <div class="col-lg-6 my-3">
+                                <label for="nome" class="form-label">Seu nome</label>
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="nome"
+                                        placeholder="Seu nome"
+                                />
+                            </div>
+
+                            <div class="col-lg-6 my-2">
+                                <label for="email" class="form-label">Seu email</label>
+                                <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="Seu nome"
+                                />
+                            </div>
+
+                            <div class="col-lg-6 my-2">
+                                <label for="fone" class="form-label">Seu Telefone</label>
+                                <input
+                                        type="tel"
+                                        class="form-control"
+                                        id="fone"
+                                        placeholder="(xx) 9999-9999"
+                                />
+                            </div>
+
+                            <div class="col-lg-6 my-2">
+                                <label for="mensagem" class="form-label">Assunto</label>
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="mensagem"
+                                        placeholder="Assunto"
+                                />
+                            </div>
+
+                            <div class="col-lg-12 my-2">
+                                <label for="nome" class="form-label">Mensagem</label>
+                                <label for="mensagemm"></label
+                                ><textarea
+                                    name="mensagemm"
+                                    id="mensagemm"
+                                    placeholder="Sua mensagem"
+                                    class="form-control"
+                            ></textarea>
+                            </div>
+
+                            <div class="col-lg-12 my-2 d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary">
+                                    Enviar mensagem
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="rodape mt-5">
+                    <p>Desenvolvido por Edilberto Cunha de Morais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<!----------------------------------- fim contato -------------------------------------->
+
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var myModal = new bootstrap.Modal(
+            document.getElementById("exampleModal")
+        );
+        myModal.show();
+    });
+</script>
+<script src="../../js/script.js"></script>
+</body>
+</html>

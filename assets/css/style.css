@@ -17,12 +17,13 @@
   --surface-color: rgb(0, 0, 0);
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden; /* Adicionado para evitar a rolagem horizontal */
 }
 
 html::-webkit-scrollbar {
-  width: .8rem;
+  width: 0.8rem;
   height: 0.25px;
 }
 html::-webkit-scrollbar-track {
@@ -192,7 +193,8 @@ header.container {
   color: var(--bg-white);
 }
 
-.carousel-inner h4, h5 {
+.carousel-inner h4,
+h5, h6 {
   color: var(--bg-orange);
   text-align: center;
 }
@@ -206,14 +208,17 @@ header.container {
   all: unset;
 }
 
-.col-lg-10::before {
+.col-lg-6::before {
   all: unset;
 }
 
+.carousel-inner {
+  border-radius: 20px;
+}
 .carousel-inner img {
   width: 60%;
   height: auto; /* Ajustado para manter a proporção */
-  border-radius: 100px;
+  border-radius: 16px;
 }
 
 .carousel-indicators button:hover,
@@ -221,23 +226,33 @@ header.container {
   background-color: var(--bg-orange);
 }
 
-.carousel-control-next, .carousel-control-prev {
-  height: 2rem;
+.carousel-control-next,
+.carousel-control-prev {
+  height: 1.5rem;
 }
 
-.carousel-control-prev, .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   position: absolute;
   top: 290px;
 }
 
 .carousel-control-next {
-  right: -1.5rem;
+  right: 1.5rem;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: black;
   background-size: 100%;
+}
+
+.carousel-control-prev {
+  left: calc(10%); /* Espaçamento das bordas da imagem */
+}
+
+.carousel-control-next {
+  right: calc(3.5%); /* Espaçamento das bordas da imagem */
 }
 
 .carousel-control-prev-icon:hover,
