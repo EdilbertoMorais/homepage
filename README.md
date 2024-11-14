@@ -1,9 +1,12 @@
 
 # 💼 Meu Currículo Web
 
-![Banner](https://link-da-imagem-do-banner.com/banner.png) <!-- Substitua pelo link direto da imagem ou adicione uma imagem no repositório e faça referência a ela -->
+![image](https://github.com/user-attachments/assets/79b2db90-b395-4969-b4c6-f68ffc6df2e4)
 
-Este projeto é uma página web que reflete meu currículo profissional, criada com HTML5, CSS, JavaScript e Bootstrap. Desenvolvi esse projeto como parte do curso de Análise e Desenvolvimento de Sistemas na FIAP. A página inclui informações sobre minhas habilidades, experiência profissional, e projetos realizados.
+
+Desenvolvi essa página com HTML5, CSS, JavaScript e Bootstrap como parte do curso de Análise e Desenvolvimento de Sistemas na FIAP. Foi uma excelente oportunidade para aprofundar meu aprendizado e aplicar na prática esses conhecimentos.
+
+A página destaca minha experiência profissional, habilidades interpessoais e as tecnologias que venho dominando ao longo da minha trajetória. Este projeto representa um marco na minha jornada de desenvolvimento e reflete meu compromisso com a evolução constante na área de tecnologia.
 
 ## 🎯 Funcionalidades
 
@@ -22,7 +25,8 @@ Este projeto é uma página web que reflete meu currículo profissional, criada 
 
 Aqui está uma prévia visual da página:
 
-![Imagem da página](https://link-da-imagem-da-pagina.com/preview.png) <!-- Substitua pelo link direto da imagem ou adicione uma imagem no repositório -->
+https://github.com/user-attachments/assets/ea5a48d2-1df6-4d88-a26a-f34cf7b91750
+
 
 ## 🎓 Aprendizado
 
@@ -32,38 +36,9 @@ Este projeto foi desenvolvido durante o curso de Análise e Desenvolvimento de S
 - Utilização do framework Bootstrap para construir interfaces responsivas.
 - Princípios de design e UX para criar uma página web atrativa e funcional.
 
-## 📂 Estrutura de Arquivos
-
-```plaintext
-meu-curriculo-web/
-├── index.html         # Página principal
-├── css/
-│   └── style.css      # Estilos personalizados
-├── js/
-│   └── main.js        # Scripts JavaScript
-├── images/
-│   └── ...            # Imagens utilizadas no site
-└── README.md          # Documentação do projeto
-```
-
-## 📷 Capturas de Tela
-
-### Página Inicial
-![Home](https://link-da-imagem-home.com/home.png) <!-- Imagem da seção inicial -->
-
-### Sessão de Habilidades
-![Skills](https://link-da-imagem-skills.com/skills.png) <!-- Imagem da seção de habilidades -->
-
-### Projetos
-![Projetos](https://link-da-imagem-projetos.com/projects.png) <!-- Imagem da seção de projetos -->
-
 ## 📬 Contato
 
 Para mais informações ou para colaborar em projetos, sinta-se à vontade para entrar em contato:
 
-- **Email**: [seuemail@exemplo.com](mailto:seuemail@exemplo.com)
-- **LinkedIn**: [seu-perfil-linkedin](https://www.linkedin.com/in/seu-perfil/)
-
-## 📜 Licença
-
-Este projeto é licenciado sob a Licença MIT - consulte o arquivo LICENSE para mais detalhes.
+- **Email**: [edilbertocmorais@gmail.com](mailto:edilbertocmorais@gmail.com)
+- **LinkedIn**: [edilbertocmorais](https://www.linkedin.com/in/edilbertocmorais/)
