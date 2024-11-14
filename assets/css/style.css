@@ -281,10 +281,6 @@ h5, h6 {
   background-color: var(--bg-orange);
 }
 
-.bg-black {
-  background-color: var(--bg-black);
-}
-
 .icon {
   font-size: 60px;
   color: var(--bg-orange);
