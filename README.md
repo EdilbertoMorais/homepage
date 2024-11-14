@@ -25,7 +25,7 @@ A página destaca minha experiência profissional, habilidades interpessoais e a
 
 Aqui está uma prévia visual da página:
 
-https://github.com/user-attachments/assets/ea5a48d2-1df6-4d88-a26a-f34cf7b91750
+https://github.com/user-attachments/assets/4943a749-a349-421b-b2f4-577222799b60
 
 
 ## 🎓 Aprendizado
