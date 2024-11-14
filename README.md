@@ -42,3 +42,5 @@ Para mais informações ou para colaborar em projetos, sinta-se à vontade para 
 
 - **Email**: [edilbertocmorais@gmail.com](mailto:edilbertocmorais@gmail.com)
 - **LinkedIn**: [edilbertocmorais](https://www.linkedin.com/in/edilbertocmorais/)
+- **Telefone**:(11) 98148-8561 [![icons8-whatsapp-20](https://github.com/user-attachments/assets/a32d49a4-c230-46df-8d32-f2087d722733)
+](https://wa.me/5511981488561) 
