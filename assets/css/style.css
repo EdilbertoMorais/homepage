@@ -328,6 +328,7 @@ h5, h6 {
 .accordion-button:not(.collapsed) {
   background-color: var(--bg-orange);
   color: var(--bg-black);
+  box-shadow: none;
 }
 
 /* Estilo do botão ao passar o mouse */
@@ -338,31 +339,33 @@ h5, h6 {
 }
 
 .accordion-button::after {
-  content: "\f0d7"; /* Ícone de seta para baixo */
-  font-family: "Font Awesome 5 Free", serif; /* Fonte do ícone */
+  flex-shrink: 0;
+  margin-left: auto;
+  font-family: "Font Awesome 5 Free", serif;
   font-weight: 900;
-  color: var(--bg-orange); /* Cor do ícone padrão */
-  margin-left: auto; /* Move o ícone para o lado direito */
+  content: "\f0d7";
+  background-image: none;
+  color: var(--bg-orange);
 }
 
 /* Cor do ícone quando o botão está expandido */
 .accordion-button:not(.collapsed)::after {
   color: var(--bg-black); /* Cor do ícone quando expandido */
+  background-image: none;
 }
 
+.accordion-button:active {
+  background-color: var(--bg-orange);
+  color: var(--bg-black);
+  box-shadow: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.accordion-button:focus {
+  border: none;
+  background-color: var(--bg-orange);
+  color: var(--bg-black);
+  box-shadow: none;
+}
 
 textarea {
   resize: none;
