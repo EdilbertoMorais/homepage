@@ -1,1205 +1,1893 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Edilberto Cunha de Morais</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
     />
     <!-- Bootstrap Icons -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
 
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
     />
 
     <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+            crossorigin="anonymous"
     />
 
     <!-- A minha CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
 
-  <body>
-  <!--adicionando fundo de tela como video-->
-  <video class="video-bg" autoplay muted loop>
+<body>
+<!--adicionando fundo de tela como video-->
+<video class="video-bg" autoplay muted loop>
     <source src="assets/videos/fundoTelaHome.mp4" type="video/mp4">
-  </video>
+</video>
 
-    <!--------------------------------- header da página ---------------------------------->
-    <header class="container mt-0 mb-5">
-      <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+<!--------------------------------- header da página ---------------------------------->
+<header class="container mt-0 mb-5">
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
         <div class="container">
-          <div class="logo-text">
-            <i class="bi bi-person-bounding-box"></i> Edilberto Cunha
-            <p>Desenvolvedor Full Stack</p>
-          </div>
+            <div class="logo-text">
+                <i class="bi bi-person-bounding-box"></i> Edilberto Cunha
+                <p>Desenvolvedor Full Stack</p>
+            </div>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa-solid fa-align-right"></i>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#sobre">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#formacao-academica">Formação</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experiencia-profissional"
-                  >Experiência Profissional</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#soft-skills">Soft Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#hard-skills">Hard Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#certificados">Certificados </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contato">Contato</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!--------------------------------- fim header ---------------------------------------->
-
-    <!--------------------------------- janela modal -------------------------------------->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-3" id="exampleModalLabel">Atenção</h1>
             <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            Esta página está em construção e ainda há muito a fazer.
-            <p>
-              Ela está disponível em produção para que você possa acompanhar o
-              desenvolvimento do projeto.
-            </p>
-          </div>
-
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
             >
-              Fechar
+                <i class="fa-solid fa-align-right"></i>
             </button>
-          </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formacao-academica">Formação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia-profissional"
+                        >Experiência Profissional</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#soft-skills">Soft Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hard-skills">Hard Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificados">Certificados </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+</header>
+<!--------------------------------- fim header ---------------------------------------->
+
+<!--------------------------------- janela modal -------------------------------------->
+<div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalLabel">Atenção</h1>
+                <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                Esta página está em construção e ainda há muito a fazer.
+                <p>
+                    Ela está disponível em produção para que você possa acompanhar o
+                    desenvolvimento do projeto.
+                </p>
+            </div>
+
+            <div class="modal-footer">
+                <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                >
+                    Fechar
+                </button>
+            </div>
+        </div>
     </div>
-    <!-------------------------------- fim janela modal ----------------------------------->
+</div>
+<!-------------------------------- fim janela modal ----------------------------------->
 
-    <!-------------------------------------- sobre ---------------------------------------->
-    <main class="main">
-      <section class="container sobre my-5" id="sobre">
+<!-------------------------------------- sobre ---------------------------------------->
+<main class="main">
+    <section class="container sobre my-5" id="sobre">
         <div class="row d-flex align-items-center justify-content-between">
-          <div class="col-lg-6">
-            <img
-              src="assets/images/outrasImagens/perfil.jpeg"
-              alt="Foto do Edilberto usando óculos, uma camisa preta e com fundo desfocado"
-              class="img-fluid"
-            />
-          </div>
+            <div class="col-lg-6">
+                <img
+                        src="assets/images/outrasImagens/perfil.jpeg"
+                        alt="Foto do Edilberto usando óculos, uma camisa preta e com fundo desfocado"
+                        class="img-fluid"
+                />
+            </div>
 
-          <div class="col-lg-6">
-            <h2 class="my-title display-5 mt-3 bold-text">Olá!</h2>
-            <h3 class="mb-4 bold-text">
-              Bem-vindo ao meu perfil profissional.
-            </h3>
-            <p>
-              Sou um desenvolvedor de software apaixonado por tecnologia, estou
-              atualmente matriculado no curso de Análise e Desenvolvimento de
-              Sistemas na FIAP, estou engajado em tornar-me um desenvolvedor
-              desde 2021, onde iniciei os meus estudos na plataforma da Alura,
-              buscando-me especializar na linguagem Java, voltada para o
-              desenvolvimento Web. Por coincidência do destino, a grade da FIAP
-              usa a linguagem Java e Python como linguagens didáticas, o que me
-              deu uma grande vantagem, pois, Java era a linguagem base dos meus
-              estudos. Tive o meu primeiro contato com Python, linguagem muito
-              interessante e de fácil entendimento. <br /><br />
-              Pude aprender prototipagem e modelagem de banco de dados, para
-              complementar tudo o que já havia estudado.
-              <br /><br />
-              Estou muito empolgado com o curso, e creio que em breve, poderei
-              disseminar o conhecimento aprendido com os meus futuros colegas de
-              trabalho.
-            </p>
-          </div>
+            <div class="col-lg-6">
+                <h2 class="my-title display-5 mt-3 bold-text">Olá!</h2>
+                <h3 class="mb-4 bold-text">
+                    Bem-vindo ao meu perfil profissional.
+                </h3>
+                <p>
+                    Sou um desenvolvedor de software apaixonado por tecnologia, estou
+                    atualmente matriculado no curso de Análise e Desenvolvimento de
+                    Sistemas na FIAP, estou engajado em tornar-me um desenvolvedor
+                    desde 2021, onde iniciei os meus estudos na plataforma da Alura,
+                    buscando-me especializar na linguagem Java, voltada para o
+                    desenvolvimento Web. Por coincidência do destino, a grade da FIAP
+                    usa a linguagem Java e Python como linguagens didáticas, o que me
+                    deu uma grande vantagem, pois, Java era a linguagem base dos meus
+                    estudos. Tive o meu primeiro contato com Python, linguagem muito
+                    interessante e de fácil entendimento. <br/><br/>
+                    Pude aprender prototipagem e modelagem de banco de dados, para
+                    complementar tudo o que já havia estudado.
+                    <br/><br/>
+                    Estou muito empolgado com o curso, e creio que em breve, poderei
+                    disseminar o conhecimento aprendido com os meus futuros colegas de
+                    trabalho.
+                </p>
+            </div>
 
-          <div class="redes-sociais mt-3 col-12">
-            <h3 class="bold-text">Visite as minhas redes sociais</h3>
-            <ul class="lista-redes-sociais mt-2">
-              <li>
+            <div class="redes-sociais mt-3 col-12">
+                <h3 class="bold-text">Visite as minhas redes sociais</h3>
+                <ul class="lista-redes-sociais mt-2">
+                    <li>
+                        <a
+                                href="https://www.linkedin.com/in/edilbertocmorais/"
+                                target="_blank"
+                        ><i class="fab fa-linkedin"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/EdilbertoMorais" target="_blank"
+                        ><i class="fab fa-github"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/5511981488561" target="_blank"
+                        ><i class="fab fa-whatsapp"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="baixar-curriculo my-5">
+                <h2>Baixar Currículo em PDF</h2>
+                <p>Clique no botão abaixo para baixar o documento</p>
                 <a
-                  href="https://www.linkedin.com/in/edilbertocmorais/"
-                  target="_blank"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://github.com/EdilbertoMorais" target="_blank"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://wa.me/5511981488561" target="_blank"
-                  ><i class="fab fa-whatsapp"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="baixar-curriculo my-5">
-            <h2>Baixar Currículo em PDF</h2>
-            <p>Clique no botão abaixo para baixar o documento</p>
-            <a
-              href="./assets/outros_arquivos/Edilberto%20Cunha%20-%20Analista%20Desenvolvedor%20Sistemas.pdf"
-              class="btn btn-primary"
-              download
-            >
-              <i class="fas fa-download"></i> Baixar Documento
-            </a>
-          </div>
+                        href="./assets/outros_arquivos/Edilberto%20Cunha%20-%20Analista%20Desenvolvedor%20Sistemas.pdf"
+                        class="btn btn-primary"
+                        download
+                >
+                    <i class="fas fa-download"></i> Baixar Documento
+                </a>
+            </div>
         </div>
-      </section>
-    </main>
-    <!------------------------------------ fim sobre -------------------------------------->
+    </section>
+</main>
+<!------------------------------------ fim sobre -------------------------------------->
 
-    <!---------------------------- formação acadêmica ------------------------------------->
-    <section class="container escolaridade" id="formacao-academica">
-      <h2 class="my-title text-center my-mt">Formação Acadêmica</h2>
-      <hr />
+<!---------------------------- formação acadêmica ------------------------------------->
+<section class="container escolaridade" id="formacao-academica">
+    <h2 class="my-title text-center my-mt">Formação Acadêmica</h2>
+    <hr/>
 
-      <div class="row d-flex align-items-center justify-content-between">
+    <div class="row d-flex align-items-center justify-content-between">
         <div class="col-lg-6 text-center">
-          <img
-            src="assets/images/outrasImagens/fiap.png"
-            alt=""
-            class="fiap img-fluid"
-          />
+            <img
+                    src="assets/images/outrasImagens/fiap.png"
+                    alt=""
+                    class="fiap img-fluid"
+            />
         </div>
         <div class="col-lg-6">
-          <h4 class="my-title my-4">
-            FIAP - Faculdade de Informática e Administração Paulista
-          </h4>
-          <p>Análise e Desenvolvimento de Sistemas</p>
-          <p>JAN 2024 - DEZ 2025</p>
+            <h4 class="my-title my-4">
+                FIAP - Faculdade de Informática e Administração Paulista
+            </h4>
+            <p>Análise e Desenvolvimento de Sistemas</p>
+            <p>JAN 2024 - DEZ 2025</p>
         </div>
-      </div>
-    </section>
-    <!----------------------------fim formação acadêmica ---------------------------------->
-
-    <!-------------------------- experiencia profissional --------------------------------->
-    <section class="container my-5" id="experiencia-profissional">
-      <h2 class="my-title text-center my-mt">Experiência Profissional</h2>
-      <hr/>
-      <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-lg-6 bi-text-left my-2">
-          <div id="carouselxp-profissional" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselxp-profissional"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselxp-profissional"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselxp-profissional"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselxp-profissional"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselxp-profissional"
-                data-bs-slide-to="4"
-                aria-label="Slide 5"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselxp-profissional"
-                data-bs-slide-to="5"
-                aria-label="Slide 6"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselxp-profissional"
-                data-bs-slide-to="6"
-                aria-label="Slide 7"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselxp-profissional"
-                data-bs-slide-to="7"
-                aria-label="Slide 8"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselxp-profissional"
-                data-bs-slide-to="8"
-                aria-label="Slide 9"
-              ></button>
-            </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="assets/images/xp-profissional/latam.png"
-                  class="latam d-block w-100"
-                  alt="emblema da empresa latam linhas aéreas"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">LATAM LINHAS AÉREAS S/A</h4>
-                  <h6>MAI/2024 - DATA ATUAL</h6>
-                  <h5 class="my-title my-4">Auxiliar de Operações de Cargas</h5>
-                  <ul class="mb-5 bi-text-indent-left">
-                    <li>
-                      Atendimento ao Cliente: Proporcionar um atendimento de
-                      excelência, assistindo os clientes com as suas necessidades e
-                      garantindo uma experiência positiva.
-                    </li>
-                    <li>
-                      Conferência Documental: Verificar e validar a documentação
-                      necessária para o embarque de cargas aéreas, assegurando
-                      conformidade com as regulamentações.
-                    </li>
-                    <li>
-                      Aceitação de Cargas: Realizar o processo de aceitação de
-                      cargas, seguindo rigorosamente os procedimentos e normas
-                      de segurança da aviação civil.
-                    </li>
-                    <li>
-                      Apoio Operacional: Oferecer suporte operacional às demais
-                      áreas envolvidas no processo logístico, garantindo a
-                      fluidez e eficiência das operações.
-                    </li>
-                    <li>
-                      Inspeção e Manuseio de Cargas: Participar das atividades
-                      de inspeção e manuseio de cargas, assegurando que sejam
-                      realizadas conforme os padrões de segurança e qualidade
-                      estabelecidos.
-                    </li>
-                    <li>
-                      Comunicação e Relacionamento Interpessoal: Manter uma
-                      comunicação eficaz e um bom relacionamento com colegas de
-                      trabalho, clientes e demais stakeholders, promovendo um
-                      ambiente de trabalho harmonioso e produtivo
-                    </li>
-                    <li>
-                      Gestão de Problemas: Identificar e resolver problemas
-                      operacionais de forma proativa, garantindo a continuidade
-                      e eficiência das operações.
-                    </li>
-                    <li>
-                      Esta função exige um compromisso constante com a
-                      excelência, a segurança e a satisfação do cliente,
-                      contribuindo significativamente para o sucesso das
-                      operações logísticas da Latam Airlines.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <img
-                  src="assets/images/xp-profissional/solfacil.png"
-                  class="solfacil d-block w-100"
-                  alt="emblema da empresa solfacil energia solar"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">SOLFACIL ENERGIA SOLAR TECN. E SERV FINANC LTDA</h4>
-                  <h6>MAI/2022 - DEZ/2022</h6>
-                  <h5 class="my-title my-4">Analista de Desenvolvimento de Sistemas</h5>
-                  <ul class="mb-5 bi-text-indent-left">
-                    <li>
-                      Responsável por acompanhar e desenvolver atividades na
-                      área de tecnologia da informação, envolvendo a análise e
-                      desenvolvimento de sistemas.
-                    </li>
-                    <li>Realizar testes em software.</li>
-                    <li>
-                      Aprimorar o conhecimento dos negócios, produtos e serviços
-                      da empresa.
-                    </li>
-                    <li>
-                      Utilizando metodologias ágeis para alavancar a
-                      produtividade da equipe, pude contribuir para um projeto
-                      de gamificação que visava aumentar o fluxo de compras da
-                      loja virtual da empresa, onde os parceiros recebiam pontos
-                      extras por compras realizadas na plataforma.
-                    </li>
-                    <li>
-                      Principal resultado: Aumento de 18% nas compras feitas
-                      pelos parceiros antigos a implantação do serviço e um
-                      crescimento de 33% em novas parcerias.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="assets/images/xp-profissional/toniato.png"
-                  class="toniato d-block w-100"
-                  alt="imagem dos caminhões da frota da empresa toniato transportes"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">TRANSPORTE TONIATO LTDA</h4>
-                  <h6>07/2019 - 07/2021</h6>
-                  <h5 class="my-title my-4">Analista Operacional Sênior</h5>
-                  <ul class="mb-5 bi-text-indent-left">
-                    <li>Controle de gestão de frota própria e agregados.</li>
-                    <li>Gestão documental de veículos e motoristas.</li>
-                    <li>
-                      Acompanhamento de produtividade da frota própria e
-                      parceiros.
-                    </li>
-                    <li>Contratação de agregados e parceiros.</li>
-                    <li>Acompanhamento de desempenho de veículos.</li>
-                    <li>
-                      Controle e validação de pagamentos e implantação de
-                      logística reversa.
-                    </li>
-                    <li>
-                      Principal resultado: incremento mensal médio de 98 mil
-                      reais/mês ao captar frete reverso, contribuindo para o
-                      aumento do faturamento da unidade.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/xp-profissional/jsl.png"
-                        class="jsl d-block w-100"
-                        alt="emblema da empresa jsl s/a"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">JSL S/A</h4>
-                  <h6>NOV/2015 - ABR/2019</h6>
-                  <h5 class="my-title my-4">Analista de Logística Sênior</h5>
-                  <ul class="mb-5 bi-text-indent-left">
-                    <li>Controle de agregados e captação de agregados.</li>
-                    <li>Análise e distribuição de demandas.</li>
-                    <li>
-                      Liderança de equipe com foco em contratação de novos
-                      agregados.
-                    </li>
-                    <li>Apoio direto a coordenação.</li>
-                    <li>Análise de mercado e divulgação de vagas.</li>
-                    <li>Acompanhamento e análise de metas.</li>
-                    <li>Gestão documental de veículos e motoristas.</li>
-                    <li>
-                      Válidação e acompanhamento de treinamentos como MOPP,
-                      Programa Olho Vivo na Estrada, Direção Defensiva, entre
-                      outros.
-                    </li>
-                    <li>
-                      Controle de Check List de manutenção, CIV, opacidade,
-                      ruído, CNH, CRLV, ASO.
-                    </li>
-                    <li>Atendimento ao cliente.</li>
-                    <li>Negociação com empresas parceiras para apoio.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/xp-profissional/transbrasiliana.png"
-                        class="transbrasiliana d-block w-100"
-                        alt="imagem dos caminhões da empresa transbrasiliana"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">TRANSBRASILIANA ENCOMENDAS E CARGAS LTDA</h4>
-                  <h6>DEZ/2014 - MAI/2015</h6>
-                  <h5 class="my-title my-4">Encarregado de Depósito</h5>
-                  <ul class="mb-5 bi-text-indent-left">
-                    <li>Gestão de pessoal.</li>
-                    <li>Acompanhamento de coleta e entregas.</li>
-                    <li>Roteirização e distribuição de demanda.</li>
-                    <li>Acompanhamento de armazenagem de cargas.</li>
-                    <li>Negociações comerciais com clientes e parceiros.</li>
-                    <li>Emissão de documentações pertinentes ao transporte.</li>
-                    <li>
-                      Gestão de gastos e faturamento da unidade com foco na
-                      redução de custos.
-                    </li>
-                    <li>Fechamento de caixa da filial.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/xp-profissional/voepass.png"
-                        class="voepass d-block w-100"
-                        alt="imagem do atr da passaredo iniciando decolagem"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">PASSAREDO LINHAS AÉREAS</h4>
-                  <h6>JUN/2013 - NOV/2014</h6>
-                  <h5 class="my-title my-4">Despachante de Cargas Líder</h5>
-                  <ul class="mb-5 bi-text-indent-left">
-                    <li>Gestão de pessoal.</li>
-                    <li>Acompanhamento de embarque e desembarque de cargas.</li>
-                    <li>
-                      Acompanhamento dos gastos da filial com foco em redução de
-                      custos.
-                    </li>
-                    <li>
-                      Fechamento faturamento filial e prestação de contas ao
-                      departamento financeiro.
-                    </li>
-                    <li>Negociações comerciais com clientes e parceiros.</li>
-                    <li>Captação de novos clientes.</li>
-                    <li>
-                      Emissão de documentações pertinentes ao transporte aéreo.
-                    </li>
-                    <li>
-                      Acompanhamento de desempenho dos prestadores de serviço.
-                    </li>
-                    <li>
-                      Abertura de novas bases e implementação de processos
-                      operacionais.
-                    </li>
-                    <li>
-                      Treinamento de novos colaboradores, garantindo a
-                      integração e a eficácia das equipes.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/xp-profissional/trip.png"
-                        class="trip d-block w-100"
-                        alt="imagem do art72 da trip linhas aereas taxiando apos o pouso"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">TRIP LINHAS AÉREAS</h4>
-                  <h6>AGO/2011 - DEZ/2012</h6>
-                  <h5 class="my-title my-4">Despachante de Cargas</h5>
-                  <ul class="mb-5 bi-text-indent-left">
-                    <li>
-                      Aceitação e conferência de mercadorias para transporte.
-                    </li>
-                    <li>Negociações comerciais com clientes.</li>
-                    <li>Captação de novos clientes.</li>
-                    <li>
-                      Emissão de documentações pertinentes ao transporte aéreo.
-                    </li>
-                    <li>
-                      Acompanhamento de embarque e desembarque de cargas nas
-                      aeronaves.
-                    </li>
-                    <li>
-                      Triagem de cargas para embarque conforme data de entrada
-                      no terminal.
-                    </li>
-                    <li>
-                      Orientação da equipe para carregamento conforme
-                      prioridades.
-                    </li>
-                    <li>
-                      Treinamento de novos colaboradores, garantindo a
-                      integração, padronização e a eficácia das equipes.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/xp-profissional/vip.png"
-                        class="vip d-block w-100"
-                        alt="logo da empresa vip cargas"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">VIP TRANSPORTES DE CARGAS LTDA</h4>
-                  <h6>ABR/2010 - JUL/2011</h6>
-                  <h5 class="my-title my-4">Supervisor Operacional</h5>
-                  <ul class="mb-5 bi-text-indent-left">
-                    <li>Gestão de pessoal.</li>
-                    <li>
-                      Aceitação e conferência de mercadorias para transporte.
-                    </li>
-                    <li>Negociações comerciais com clientes.</li>
-                    <li>Atendimento ao cliente.</li>
-                    <li>Captação de novos clientes.</li>
-                    <li>Gestão operacional.</li>
-                    <li>
-                      Acompanhamento de emissões de documentação pertinente ao
-                      transporte rodo aéreo.
-                    </li>
-                    <li>
-                      Acompanhamento de triagem de cargas para entrega conforme
-                      data de entrada no armazém.
-                    </li>
-                    <li>Roteirização e distribuição de demanda.</li>
-                    <li>
-                      Treinamento de novos colaboradores, garantindo a
-                      integração, padronização e a eficácia das equipes.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/xp-profissional/tam.png"
-                        class="tam d-block w-100"
-                        alt="aeronave da tam em processo de decolagem"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">TAM LINHAS AÉREAS S/A</h4>
-                  <h6>FEV/2006 - ABR/2010</h6>
-                  <h5 class="my-title my-4">Despachante de Cargas</h5>
-                  <ul class="mb-5 bi-text-indent-left">
-                    <li>
-                      Aceitação e conferência de mercadorias para transporte.
-                    </li>
-                    <li>Atendimento ao cliente.</li>
-                    <li>
-                      Emissão de documentações pertinentes ao transporte aéreo.
-                    </li>
-                    <li>
-                      Acompanhamento de embarque e desembarque de cargas nos
-                      equipamentos.
-                    </li>
-                    <li>
-                      Triagem de cargas para embarque conforme data de entrada
-                      no terminal.
-                    </li>
-                    <li>
-                      Orientação da equipe para carregamento conforme prioridades.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselxp-profissional"
-              data-bs-slide="prev"
-            >
-              <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="orange"
-                      viewBox="0 0 30 16"
-              >
-                <path
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z"
-                />
-              </svg>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselxp-profissional"
-              data-bs-slide="next"
-            >
-              <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="orange"
-                      viewBox="0 0 30 16"
-              >
-                <path
-                        d="M4.646 1.646a.5.5 0 0 0 0 .708L9.293 7l-4.647 4.646a.5.5 0 0 0 .708.708l5-5a.5.5 0 0 0 0-.708l-5-5a.5.5 0 0 0-.708 0z"
-                />
-              </svg>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-------------------------- fim experiencia profissional ----------------------------->
-
-    <!-------------------------------- soft-skills ---------------------------------------->
-    <section class="container my-5" id="soft-skills">
-      <h2 class="my-title text-center my-mt">Soft Skills</h2>
-      <hr/>
-      <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-lg-6 text-center my-2">
-          <div id="carousel-soft-skill" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-            <div class="carousel-indicators">
-              <button
-                      type="button"
-                      data-bs-target="#carousel-soft-skill"
-                      data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-              ></button>
-              <button
-                      type="button"
-                      data-bs-target="#carousel-soft-skill"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-              ></button>
-              <button
-                      type="button"
-                      data-bs-target="#carousel-soft-skill"
-                      data-bs-slide-to="2"
-                      aria-label="Slide 3"
-              ></button>
-              <button
-                      type="button"
-                      data-bs-target="#carousel-soft-skill"
-                      data-bs-slide-to="3"
-                      aria-label="Slide 4"
-              ></button>
-              <button
-                      type="button"
-                      data-bs-target="#carousel-soft-skill"
-                      data-bs-slide-to="4"
-                      aria-label="Slide 5"
-              ></button>
-              <button
-                      type="button"
-                      data-bs-target="#carousel-soft-skill"
-                      data-bs-slide-to="5"
-                      aria-label="Slide 6"
-              ></button>
-              <button
-                      type="button"
-                      data-bs-target="#carousel-soft-skill"
-                      data-bs-slide-to="6"
-                      aria-label="Slide 7"
-              ></button>
-              <button
-                      type="button"
-                      data-bs-target="#carousel-soft-skill"
-                      data-bs-slide-to="7"
-                      aria-label="Slide 8"
-              ></button>
-            </div>
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                        src="assets/images/softSkill/lideranca.jpg"
-                        class="d-block w-100"
-                        alt="Imagem de um treinador orientando os jogadores do seu time."
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">Liderança</h4>
-                  <p class="mb-5">Perfil de liderança, focada em inspirar e motivar a equipe. Tomo decisões estratégicas sob pressão, mantendo a comunicação aberta e valorizando o trabalho em equipe. Busco sempre soluções proativas e me adapto bem a mudanças, liderando com empatia para alcançar os objetivos.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/softSkill/criatividade.jpg"
-                        class="d-block w-100"
-                        alt="Imagem de uma lâmpada feita com lápis e a frase seja criativo ao lado"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">Criatividade</h4>
-                  <p class="mb-5">Sou criativo, sempre buscando novas abordagens para resolver problemas e enfrentar
-                    desafios. Gosto de pensar fora da caixa, experimentando ideias inovadoras e adaptando-me
-                    rapidamente a diferentes situações. A minha criatividade é impulsionada pela curiosidade e pela
-                    vontade de transformar conceitos em soluções práticas.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/softSkill/comunicacao.jpg"
-                        class="d-block w-100"
-                        alt="imagem de telefone que remetem ao tema de comunicação"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">Comunicação</h4>
-                  <p class="mb-5">Tenho uma forte habilidade de comunicação, expressando ideias de forma clara e
-                    objetiva. Valorizo o diálogo aberto, escutando ativamente as opiniões dos outros e adaptando a minha
-                    abordagem conforme necessário. A minha comunicação eficaz facilita a colaboração em equipe e ajuda a
-                    evitar mal-entendidos, sempre focando em soluções construtivas.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/softSkill/empatia.jpg"
-                        class="d-block w-100"
-                        alt="imagem de uma pessoa sendo empática com outra pessoa"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">Empatia</h4>
-                  <p class="mb-5">Sou uma pessoa empática, sempre buscando entender o ponto de vista e sentimentos dos
-                    outros. Essa habilidade me ajuda a construir relações de confiança e a criar um ambiente de
-                    colaboração e respeito. Ao agir com empatia, consigo tomar decisões mais justas e promover uma
-                    comunicação mais eficaz dentro da equipe.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/softSkill/tempo.jpg"
-                        class="d-block w-100"
-                        alt="imagem de uma ampulheta para mostrar o tempo correndo"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">Gerenciamento de Tempo</h4>
-                  <p class="mb-5">Tenho forte habilidade de gestão de tempo, priorizando tarefas de forma
-                    estratégica para garantir a eficiência e o cumprimento de prazos. Sou organizado e mantenho o
-                    foco em atividades-chave, sem comprometer a qualidade. Essa gestão
-                    equilibrada permite-me otimizar resultados e lidar com múltiplos projetos de forma eficaz.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/softSkill/criticoAnalitico.jpg"
-                        class="d-block w-100"
-                        alt="imagem de tabela e gráficos e uma pessoa analisando"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">Pensamento Crítico e Analítico</h4>
-                  <p class="mb-5">Tenho um forte pensamento crítico e analítico, o que me permite avaliar informações de forma objetiva e tomar decisões embasadas. Gosto de aprofundar nas causas dos problemas, identificando padrões e soluções estratégicas. Essa abordagem me ajuda a enfrentar desafios complexos com clareza e precisão, sempre visando a melhor solução.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/softSkill/negociacao.jpg"
-                        class="d-block w-100"
-                        alt="imagem de pessoas em uma mesa negociando"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">Negociação</h4>
-                  <p class="mb-5">Tenho habilidade em negociação, buscando sempre soluções que beneficiem todas as partes envolvidas. Uso uma abordagem estratégica e flexível, ouvindo ativamente e entendendo as necessidades dos outros para chegar a acordos eficazes. Foco em manter relacionamentos positivos e em alcançar resultados que sejam mutuamente vantajosos.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                        src="assets/images/softSkill/trabalhoEquipe.jpg"
-                        class="d-block w-100"
-                        alt="imagem de pessoas dando as mãos e formando uma equipe unida"
-                />
-                <div class="my-2">
-                  <h4 class="my-title my-4">Trabalho em Equipe</h4>
-                  <p class="mb-5">Sou um defensor do trabalho em equipe, acreditando que a colaboração fortalece as
-                    soluções e melhora os resultados. Valorizo a diversidade de ideias e busco sempre contribuir de
-                    forma positiva, promovendo um ambiente de respeito e apoio mútuo. A minha capacidade de comunicação
-                    e empatia facilita a integração e o engajamento do grupo.</p>
-                </div>
-              </div>
-            </div>
-
-            <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carousel-soft-skill"
-                    data-bs-slide="prev"
-            >
-              <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="orange"
-                      viewBox="0 0 30 16"
-              >
-                <path
-                        d="M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z"
-                />
-              </svg>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carousel-soft-skill"
-                    data-bs-slide="next"
-            >
-              <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="orange"
-                      viewBox="0 0 30 16"
-              >
-                <path
-                        d="M4.646 1.646a.5.5 0 0 0 0 .708L9.293 7l-4.647 4.646a.5.5 0 0 0 .708.708l5-5a.5.5 0 0 0 0-.708l-5-5a.5.5 0 0 0-.708 0z"
-                />
-              </svg>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!----------------------------- fim soft skills --------------------------------------->
-
-    <!--------------------------------- hard -skills -------------------------------------->
-  <section class="container my-5" id="hard-skills">
-    <h2 class="my-title text-center my-mt">Hard Skills</h2>
-    <hr />
-    <div class="row d-flex align-items-center justify-content-center">
-      <div class="col-lg-3 my-2">
-        <div class="card text-center p-4">
-          <img src="assets/images/icons/java_icon.svg" alt="Ícone Java" class="icon" width="60" height="60">
-          <div class="card-body">
-            <h5 class="card-title">Java</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 my-2">
-        <div class="card text-center p-4">
-          <img src="assets/images/icons/python_icon.svg" alt="Ícone Python" class="icon" width="60" height="60">
-          <div class="card-body">
-            <h5 class="card-title">Python</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 my-2">
-        <div class="card text-center p-4">
-          <img src="assets/images/icons/html5_icon.svg" alt="Ícone HTML5" class="icon" width="60" height="60">
-          <div class="card-body">
-            <h5 class="card-title">HTML5</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 my-2">
-        <div class="card text-center p-4">
-          <img src="assets/images/icons/css_icon.svg" alt="Ícone CSS" class="icon" width="60" height="60">
-          <div class="card-body">
-            <h5 class="card-title">CSS</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 my-2">
-        <div class="card text-center p-4">
-          <img src="assets/images/icons/git_icon.svg" alt="Ícone Git" class="icon" width="60" height="60">
-          <div class="card-body">
-            <h5 class="card-title">Git</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 my-2">
-        <div class="card text-center p-4">
-          <img src="assets/images/icons/github_icon.svg" alt="Ícone GitHub" class="icon" width="60" height="60">
-          <div class="card-body">
-            <h5 class="card-title">GitHub</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 my-2">
-        <div class="card text-center p-4">
-          <img src="assets/images/icons/scrum_icon.svg" alt="Ícone Scrum" class="icon" width="60" height="60">
-          <div class="card-body">
-            <h5 class="card-title">Scrum</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 my-2">
-        <div class="card text-center p-4">
-          <img src="assets/images/icons/kanban.svg" alt="Ícone Kanban" class="icon" width="60" height="60">
-          <div class="card-body">
-            <h5 class="card-title">Kanban</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 my-2">
-        <div class="card text-center p-4">
-          <img src="assets/images/icons/bootstrap_icon.svg" alt="Ícone BootStrap" class="icon" width="60" height="60">
-          <div class="card-body">
-            <h5 class="card-title">BootStrap</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 my-2">
-        <div class="card text-center p-4">
-          <img src="assets/images/icons/sprinboot_icon.svg" alt="Ícone Spring Boot" class="icon" width="60" height="60">
-          <div class="card-body">
-            <h5 class="card-title">Spring Boot</h5>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 my-2">
-        <div class="card text-center p-4">
-          <img src="assets/images/icons/intellij_icon.svg" alt="Ícone IntelliJ IDEA" class="icon" width="60" height="60">
-          <div class="card-body">
-            <h5 class="card-title">IntelliJ IDEA</h5>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+</section>
+<!----------------------------fim formação acadêmica ---------------------------------->
 
-  <!-------------------------------- fim hard-skills ------------------------------------>
+<!-------------------------- experiencia profissional --------------------------------->
+<section class="container my-5" id="experiencia-profissional">
+    <h2 class="my-title text-center my-mt">Experiência Profissional</h2>
+    <hr/>
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-lg-6 bi-text-left my-2">
+            <div id="carouselxp-profissional" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-indicators">
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="3"
+                            aria-label="Slide 4"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="4"
+                            aria-label="Slide 5"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="5"
+                            aria-label="Slide 6"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="6"
+                            aria-label="Slide 7"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="7"
+                            aria-label="Slide 8"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carouselxp-profissional"
+                            data-bs-slide-to="8"
+                            aria-label="Slide 9"
+                    ></button>
+                </div>
 
-    <!----------------------------------- certificados ------------------------------------>
-    <section class="container mb-5" id="certificados">
-      <h2 class="my-title text-center my-mt">Certificados</h2>
-      <hr />
-      <div class="row d-flex align-items-center justify-content-center">
-        <div class="col-lg-3 my-2">
-          <div class="card text-center">
-            <img
-              src="./assets/images/certificados/PostgreSQL.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h4 class="my-title my-3">PostgreSQL</h4>
-              <ul>
-                <li>Conteúdo</li>
-                <li>Conteúdo</li>
-                <li>Conteúdo</li>
-                <li>Conteúdo</li>
-              </ul>
-              <div class="mt-5">
-                <a href="#" class="btn btn-primary">Mais informações</a>
-              </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                                src="assets/images/xp-profissional/latam.png"
+                                class="latam d-block w-100"
+                                alt="emblema da empresa latam linhas aéreas"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">LATAM LINHAS AÉREAS S/A</h4>
+                            <h6>MAI/2024 - DATA ATUAL</h6>
+                            <h5 class="my-title my-4">Auxiliar de Operações de Cargas</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>
+                                    Atendimento ao Cliente: Proporcionar um atendimento de
+                                    excelência, assistindo os clientes com as suas necessidades e
+                                    garantindo uma experiência positiva.
+                                </li>
+                                <li>
+                                    Conferência Documental: Verificar e validar a documentação
+                                    necessária para o embarque de cargas aéreas, assegurando
+                                    conformidade com as regulamentações.
+                                </li>
+                                <li>
+                                    Aceitação de Cargas: Realizar o processo de aceitação de
+                                    cargas, seguindo rigorosamente os procedimentos e normas
+                                    de segurança da aviação civil.
+                                </li>
+                                <li>
+                                    Apoio Operacional: Oferecer suporte operacional às demais
+                                    áreas envolvidas no processo logístico, garantindo a
+                                    fluidez e eficiência das operações.
+                                </li>
+                                <li>
+                                    Inspeção e Manuseio de Cargas: Participar das atividades
+                                    de inspeção e manuseio de cargas, assegurando que sejam
+                                    realizadas conforme os padrões de segurança e qualidade
+                                    estabelecidos.
+                                </li>
+                                <li>
+                                    Comunicação e Relacionamento Interpessoal: Manter uma
+                                    comunicação eficaz e um bom relacionamento com colegas de
+                                    trabalho, clientes e demais stakeholders, promovendo um
+                                    ambiente de trabalho harmonioso e produtivo
+                                </li>
+                                <li>
+                                    Gestão de Problemas: Identificar e resolver problemas
+                                    operacionais de forma proativa, garantindo a continuidade
+                                    e eficiência das operações.
+                                </li>
+                                <li>
+                                    Esta função exige um compromisso constante com a
+                                    excelência, a segurança e a satisfação do cliente,
+                                    contribuindo significativamente para o sucesso das
+                                    operações logísticas da Latam Airlines.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/xp-profissional/solfacil.png"
+                                class="solfacil d-block w-100"
+                                alt="emblema da empresa solfacil energia solar"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">SOLFACIL ENERGIA SOLAR TECN. E SERV FINANC LTDA</h4>
+                            <h6>MAI/2022 - DEZ/2022</h6>
+                            <h5 class="my-title my-4">Analista de Desenvolvimento de Sistemas</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>
+                                    Responsável por acompanhar e desenvolver atividades na
+                                    área de tecnologia da informação, envolvendo a análise e
+                                    desenvolvimento de sistemas.
+                                </li>
+                                <li>Realizar testes em software.</li>
+                                <li>
+                                    Aprimorar o conhecimento dos negócios, produtos e serviços
+                                    da empresa.
+                                </li>
+                                <li>
+                                    Utilizando metodologias ágeis para alavancar a
+                                    produtividade da equipe, pude contribuir para um projeto
+                                    de gamificação que visava aumentar o fluxo de compras da
+                                    loja virtual da empresa, onde os parceiros recebiam pontos
+                                    extras por compras realizadas na plataforma.
+                                </li>
+                                <li>
+                                    Principal resultado: Aumento de 18% nas compras feitas
+                                    pelos parceiros antigos a implantação do serviço e um
+                                    crescimento de 33% em novas parcerias.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/xp-profissional/toniato.png"
+                                class="toniato d-block w-100"
+                                alt="imagem dos caminhões da frota da empresa toniato transportes"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">TRANSPORTE TONIATO LTDA</h4>
+                            <h6>07/2019 - 07/2021</h6>
+                            <h5 class="my-title my-4">Analista Operacional Sênior</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>Controle de gestão de frota própria e agregados.</li>
+                                <li>Gestão documental de veículos e motoristas.</li>
+                                <li>
+                                    Acompanhamento de produtividade da frota própria e
+                                    parceiros.
+                                </li>
+                                <li>Contratação de agregados e parceiros.</li>
+                                <li>Acompanhamento de desempenho de veículos.</li>
+                                <li>
+                                    Controle e validação de pagamentos e implantação de
+                                    logística reversa.
+                                </li>
+                                <li>
+                                    Principal resultado: incremento mensal médio de 98 mil
+                                    reais/mês ao captar frete reverso, contribuindo para o
+                                    aumento do faturamento da unidade.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/xp-profissional/jsl.png"
+                                class="jsl d-block w-100"
+                                alt="emblema da empresa jsl s/a"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">JSL S/A</h4>
+                            <h6>NOV/2015 - ABR/2019</h6>
+                            <h5 class="my-title my-4">Analista de Logística Sênior</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>Controle de agregados e captação de agregados.</li>
+                                <li>Análise e distribuição de demandas.</li>
+                                <li>
+                                    Liderança de equipe com foco em contratação de novos
+                                    agregados.
+                                </li>
+                                <li>Apoio direto a coordenação.</li>
+                                <li>Análise de mercado e divulgação de vagas.</li>
+                                <li>Acompanhamento e análise de metas.</li>
+                                <li>Gestão documental de veículos e motoristas.</li>
+                                <li>
+                                    Válidação e acompanhamento de treinamentos como MOPP,
+                                    Programa Olho Vivo na Estrada, Direção Defensiva, entre
+                                    outros.
+                                </li>
+                                <li>
+                                    Controle de Check List de manutenção, CIV, opacidade,
+                                    ruído, CNH, CRLV, ASO.
+                                </li>
+                                <li>Atendimento ao cliente.</li>
+                                <li>Negociação com empresas parceiras para apoio.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/xp-profissional/transbrasiliana.png"
+                                class="transbrasiliana d-block w-100"
+                                alt="imagem dos caminhões da empresa transbrasiliana"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">TRANSBRASILIANA ENCOMENDAS E CARGAS LTDA</h4>
+                            <h6>DEZ/2014 - MAI/2015</h6>
+                            <h5 class="my-title my-4">Encarregado de Depósito</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>Gestão de pessoal.</li>
+                                <li>Acompanhamento de coleta e entregas.</li>
+                                <li>Roteirização e distribuição de demanda.</li>
+                                <li>Acompanhamento de armazenagem de cargas.</li>
+                                <li>Negociações comerciais com clientes e parceiros.</li>
+                                <li>Emissão de documentações pertinentes ao transporte.</li>
+                                <li>
+                                    Gestão de gastos e faturamento da unidade com foco na
+                                    redução de custos.
+                                </li>
+                                <li>Fechamento de caixa da filial.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/xp-profissional/voepass.png"
+                                class="voepass d-block w-100"
+                                alt="imagem do atr da passaredo iniciando decolagem"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">PASSAREDO LINHAS AÉREAS</h4>
+                            <h6>JUN/2013 - NOV/2014</h6>
+                            <h5 class="my-title my-4">Despachante de Cargas Líder</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>Gestão de pessoal.</li>
+                                <li>Acompanhamento de embarque e desembarque de cargas.</li>
+                                <li>
+                                    Acompanhamento dos gastos da filial com foco em redução de
+                                    custos.
+                                </li>
+                                <li>
+                                    Fechamento faturamento filial e prestação de contas ao
+                                    departamento financeiro.
+                                </li>
+                                <li>Negociações comerciais com clientes e parceiros.</li>
+                                <li>Captação de novos clientes.</li>
+                                <li>
+                                    Emissão de documentações pertinentes ao transporte aéreo.
+                                </li>
+                                <li>
+                                    Acompanhamento de desempenho dos prestadores de serviço.
+                                </li>
+                                <li>
+                                    Abertura de novas bases e implementação de processos
+                                    operacionais.
+                                </li>
+                                <li>
+                                    Treinamento de novos colaboradores, garantindo a
+                                    integração e a eficácia das equipes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/xp-profissional/trip.png"
+                                class="trip d-block w-100"
+                                alt="imagem do art72 da trip linhas aereas taxiando apos o pouso"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">TRIP LINHAS AÉREAS</h4>
+                            <h6>AGO/2011 - DEZ/2012</h6>
+                            <h5 class="my-title my-4">Despachante de Cargas</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>
+                                    Aceitação e conferência de mercadorias para transporte.
+                                </li>
+                                <li>Negociações comerciais com clientes.</li>
+                                <li>Captação de novos clientes.</li>
+                                <li>
+                                    Emissão de documentações pertinentes ao transporte aéreo.
+                                </li>
+                                <li>
+                                    Acompanhamento de embarque e desembarque de cargas nas
+                                    aeronaves.
+                                </li>
+                                <li>
+                                    Triagem de cargas para embarque conforme data de entrada
+                                    no terminal.
+                                </li>
+                                <li>
+                                    Orientação da equipe para carregamento conforme
+                                    prioridades.
+                                </li>
+                                <li>
+                                    Treinamento de novos colaboradores, garantindo a
+                                    integração, padronização e a eficácia das equipes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/xp-profissional/vip.png"
+                                class="vip d-block w-100"
+                                alt="logo da empresa vip cargas"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">VIP TRANSPORTES DE CARGAS LTDA</h4>
+                            <h6>ABR/2010 - JUL/2011</h6>
+                            <h5 class="my-title my-4">Supervisor Operacional</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>Gestão de pessoal.</li>
+                                <li>
+                                    Aceitação e conferência de mercadorias para transporte.
+                                </li>
+                                <li>Negociações comerciais com clientes.</li>
+                                <li>Atendimento ao cliente.</li>
+                                <li>Captação de novos clientes.</li>
+                                <li>Gestão operacional.</li>
+                                <li>
+                                    Acompanhamento de emissões de documentação pertinente ao
+                                    transporte rodo aéreo.
+                                </li>
+                                <li>
+                                    Acompanhamento de triagem de cargas para entrega conforme
+                                    data de entrada no armazém.
+                                </li>
+                                <li>Roteirização e distribuição de demanda.</li>
+                                <li>
+                                    Treinamento de novos colaboradores, garantindo a
+                                    integração, padronização e a eficácia das equipes.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/xp-profissional/tam.png"
+                                class="tam d-block w-100"
+                                alt="aeronave da tam em processo de decolagem"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">TAM LINHAS AÉREAS S/A</h4>
+                            <h6>FEV/2006 - ABR/2010</h6>
+                            <h5 class="my-title my-4">Despachante de Cargas</h5>
+                            <ul class="mb-5 bi-text-indent-left">
+                                <li>
+                                    Aceitação e conferência de mercadorias para transporte.
+                                </li>
+                                <li>Atendimento ao cliente.</li>
+                                <li>
+                                    Emissão de documentações pertinentes ao transporte aéreo.
+                                </li>
+                                <li>
+                                    Acompanhamento de embarque e desembarque de cargas nos
+                                    equipamentos.
+                                </li>
+                                <li>
+                                    Triagem de cargas para embarque conforme data de entrada
+                                    no terminal.
+                                </li>
+                                <li>
+                                    Orientação da equipe para carregamento conforme prioridades.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselxp-profissional"
+                        data-bs-slide="prev"
+                >
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="orange"
+                            viewBox="0 0 30 16"
+                    >
+                        <path
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z"
+                        />
+                    </svg>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselxp-profissional"
+                        data-bs-slide="next"
+                >
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="orange"
+                            viewBox="0 0 30 16"
+                    >
+                        <path
+                                d="M4.646 1.646a.5.5 0 0 0 0 .708L9.293 7l-4.647 4.646a.5.5 0 0 0 .708.708l5-5a.5.5 0 0 0 0-.708l-5-5a.5.5 0 0 0-.708 0z"
+                        />
+                    </svg>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-          </div>
+        </div>
+    </div>
+</section>
+<!-------------------------- fim experiencia profissional ----------------------------->
+
+<!-------------------------------- soft-skills ---------------------------------------->
+<section class="container my-5" id="soft-skills">
+    <h2 class="my-title text-center my-mt">Soft Skills</h2>
+    <hr/>
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-lg-6 text-center my-2">
+            <div id="carousel-soft-skill" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-indicators">
+                    <button
+                            type="button"
+                            data-bs-target="#carousel-soft-skill"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carousel-soft-skill"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carousel-soft-skill"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carousel-soft-skill"
+                            data-bs-slide-to="3"
+                            aria-label="Slide 4"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carousel-soft-skill"
+                            data-bs-slide-to="4"
+                            aria-label="Slide 5"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carousel-soft-skill"
+                            data-bs-slide-to="5"
+                            aria-label="Slide 6"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carousel-soft-skill"
+                            data-bs-slide-to="6"
+                            aria-label="Slide 7"
+                    ></button>
+                    <button
+                            type="button"
+                            data-bs-target="#carousel-soft-skill"
+                            data-bs-slide-to="7"
+                            aria-label="Slide 8"
+                    ></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                                src="assets/images/softSkill/lideranca.jpg"
+                                class="d-block w-100"
+                                alt="Imagem de um treinador orientando os jogadores do seu time."
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">Liderança</h4>
+                            <p class="mb-5">Perfil de liderança, focada em inspirar e motivar a equipe. Tomo decisões
+                                estratégicas sob pressão, mantendo a comunicação aberta e valorizando o trabalho em
+                                equipe. Busco sempre soluções proativas e me adapto bem a mudanças, liderando com
+                                empatia para alcançar os objetivos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/softSkill/criatividade.jpg"
+                                class="d-block w-100"
+                                alt="Imagem de uma lâmpada feita com lápis e a frase seja criativo ao lado"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">Criatividade</h4>
+                            <p class="mb-5">Sou criativo, sempre buscando novas abordagens para resolver problemas e
+                                enfrentar
+                                desafios. Gosto de pensar fora da caixa, experimentando ideias inovadoras e adaptando-me
+                                rapidamente a diferentes situações. A minha criatividade é impulsionada pela curiosidade
+                                e pela
+                                vontade de transformar conceitos em soluções práticas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/softSkill/comunicacao.jpg"
+                                class="d-block w-100"
+                                alt="imagem de telefone que remetem ao tema de comunicação"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">Comunicação</h4>
+                            <p class="mb-5">Tenho uma forte habilidade de comunicação, expressando ideias de forma clara
+                                e
+                                objetiva. Valorizo o diálogo aberto, escutando ativamente as opiniões dos outros e
+                                adaptando a minha
+                                abordagem conforme necessário. A minha comunicação eficaz facilita a colaboração em
+                                equipe e ajuda a
+                                evitar mal-entendidos, sempre focando em soluções construtivas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/softSkill/empatia.jpg"
+                                class="d-block w-100"
+                                alt="imagem de uma pessoa sendo empática com outra pessoa"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">Empatia</h4>
+                            <p class="mb-5">Sou uma pessoa empática, sempre buscando entender o ponto de vista e
+                                sentimentos dos
+                                outros. Essa habilidade me ajuda a construir relações de confiança e a criar um ambiente
+                                de
+                                colaboração e respeito. Ao agir com empatia, consigo tomar decisões mais justas e
+                                promover uma
+                                comunicação mais eficaz dentro da equipe.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/softSkill/tempo.jpg"
+                                class="d-block w-100"
+                                alt="imagem de uma ampulheta para mostrar o tempo correndo"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">Gerenciamento de Tempo</h4>
+                            <p class="mb-5">Tenho forte habilidade de gestão de tempo, priorizando tarefas de forma
+                                estratégica para garantir a eficiência e o cumprimento de prazos. Sou organizado e
+                                mantenho o
+                                foco em atividades-chave, sem comprometer a qualidade. Essa gestão
+                                equilibrada permite-me otimizar resultados e lidar com múltiplos projetos de forma
+                                eficaz.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/softSkill/criticoAnalitico.jpg"
+                                class="d-block w-100"
+                                alt="imagem de tabela e gráficos e uma pessoa analisando"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">Pensamento Crítico e Analítico</h4>
+                            <p class="mb-5">Tenho um forte pensamento crítico e analítico, o que me permite avaliar
+                                informações de forma objetiva e tomar decisões embasadas. Gosto de aprofundar nas causas
+                                dos problemas, identificando padrões e soluções estratégicas. Essa abordagem me ajuda a
+                                enfrentar desafios complexos com clareza e precisão, sempre visando a melhor
+                                solução.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/softSkill/negociacao.jpg"
+                                class="d-block w-100"
+                                alt="imagem de pessoas em uma mesa negociando"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">Negociação</h4>
+                            <p class="mb-5">Tenho habilidade em negociação, buscando sempre soluções que beneficiem
+                                todas as partes envolvidas. Uso uma abordagem estratégica e flexível, ouvindo ativamente
+                                e entendendo as necessidades dos outros para chegar a acordos eficazes. Foco em manter
+                                relacionamentos positivos e em alcançar resultados que sejam mutuamente vantajosos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                                src="assets/images/softSkill/trabalhoEquipe.jpg"
+                                class="d-block w-100"
+                                alt="imagem de pessoas dando as mãos e formando uma equipe unida"
+                        />
+                        <div class="my-2">
+                            <h4 class="my-title my-4">Trabalho em Equipe</h4>
+                            <p class="mb-5">Sou um defensor do trabalho em equipe, acreditando que a colaboração
+                                fortalece as
+                                soluções e melhora os resultados. Valorizo a diversidade de ideias e busco sempre
+                                contribuir de
+                                forma positiva, promovendo um ambiente de respeito e apoio mútuo. A minha capacidade de
+                                comunicação
+                                e empatia facilita a integração e o engajamento do grupo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carousel-soft-skill"
+                        data-bs-slide="prev"
+                >
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="orange"
+                            viewBox="0 0 30 16"
+                    >
+                        <path
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z"
+                        />
+                    </svg>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carousel-soft-skill"
+                        data-bs-slide="next"
+                >
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="orange"
+                            viewBox="0 0 30 16"
+                    >
+                        <path
+                                d="M4.646 1.646a.5.5 0 0 0 0 .708L9.293 7l-4.647 4.646a.5.5 0 0 0 .708.708l5-5a.5.5 0 0 0 0-.708l-5-5a.5.5 0 0 0-.708 0z"
+                        />
+                    </svg>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!----------------------------- fim soft skills --------------------------------------->
+
+<!--------------------------------- hard -skills -------------------------------------->
+<section class="container my-5" id="hard-skills">
+    <h2 class="my-title text-center my-mt">Hard Skills</h2>
+    <hr/>
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-lg-3 my-2">
+            <div class="card text-center p-4">
+                <img src="assets/images/icons/java_icon.svg" alt="Ícone Java" class="icon" width="60" height="60">
+                <div class="card-body">
+                    <h5 class="card-title">Java</h5>
+                </div>
+            </div>
         </div>
 
         <div class="col-lg-3 my-2">
-          <div class="card text-center">
-            <img
-              src="./assets/images/certificados/PostgreSQL.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h4 class="my-title my-3">PostgreSQL</h4>
-              <ul>
-                <li>Conteúdo</li>
-                <li>Conteúdo</li>
-                <li>Conteúdo</li>
-                <li>Conteúdo</li>
-              </ul>
-              <div class="mt-5">
-                <a href="#" class="btn btn-primary">Mais informações</a>
-              </div>
+            <div class="card text-center p-4">
+                <img src="assets/images/icons/python_icon.svg" alt="Ícone Python" class="icon" width="60" height="60">
+                <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                </div>
             </div>
-          </div>
         </div>
 
         <div class="col-lg-3 my-2">
-          <div class="card text-center">
-            <img
-              src="./assets/images/certificados/PostgreSQL.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h4 class="my-title my-3">PostgreSQL</h4>
-              <ul>
-                <li>Conteúdo</li>
-                <li>Conteúdo</li>
-                <li>Conteúdo</li>
-                <li>Conteúdo</li>
-              </ul>
-              <div class="mt-5">
-                <a href="#" class="btn btn-primary">Mais informações</a>
-              </div>
+            <div class="card text-center p-4">
+                <img src="assets/images/icons/html5_icon.svg" alt="Ícone HTML5" class="icon" width="60" height="60">
+                <div class="card-body">
+                    <h5 class="card-title">HTML5</h5>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!-------------------------------- fim certificados ----------------------------------->
 
-    <!----------------------------- Button ScrollTop -------------------------------------->
-    <button type="button" class="scrollTop" title="Botão ScrollTop">
-      <i class="fa-solid fa-chevron-up"></i>
-    </button>
-    <!----------------------------- FIM Button ScrollTop ---------------------------------->
-    
-    <!-------------------------------------- contato -------------------------------------->
-    <footer class="footer">
-      <hr />
-      <section class="container-fluid" id="contato">
+        <div class="col-lg-3 my-2">
+            <div class="card text-center p-4">
+                <img src="assets/images/icons/css_icon.svg" alt="Ícone CSS" class="icon" width="60" height="60">
+                <div class="card-body">
+                    <h5 class="card-title">CSS</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 my-2">
+            <div class="card text-center p-4">
+                <img src="assets/images/icons/git_icon.svg" alt="Ícone Git" class="icon" width="60" height="60">
+                <div class="card-body">
+                    <h5 class="card-title">Git</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 my-2">
+            <div class="card text-center p-4">
+                <img src="assets/images/icons/github_icon.svg" alt="Ícone GitHub" class="icon" width="60" height="60">
+                <div class="card-body">
+                    <h5 class="card-title">GitHub</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 my-2">
+            <div class="card text-center p-4">
+                <img src="assets/images/icons/scrum_icon.svg" alt="Ícone Scrum" class="icon" width="60" height="60">
+                <div class="card-body">
+                    <h5 class="card-title">Scrum</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 my-2">
+            <div class="card text-center p-4">
+                <img src="assets/images/icons/kanban.svg" alt="Ícone Kanban" class="icon" width="60" height="60">
+                <div class="card-body">
+                    <h5 class="card-title">Kanban</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 my-2">
+            <div class="card text-center p-4">
+                <img src="assets/images/icons/bootstrap_icon.svg" alt="Ícone BootStrap" class="icon" width="60"
+                     height="60">
+                <div class="card-body">
+                    <h5 class="card-title">BootStrap</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 my-2">
+            <div class="card text-center p-4">
+                <img src="assets/images/icons/sprinboot_icon.svg" alt="Ícone Spring Boot" class="icon" width="60"
+                     height="60">
+                <div class="card-body">
+                    <h5 class="card-title">Spring Boot</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 my-2">
+            <div class="card text-center p-4">
+                <img src="assets/images/icons/intellij_icon.svg" alt="Ícone IntelliJ IDEA" class="icon" width="60"
+                     height="60">
+                <div class="card-body">
+                    <h5 class="card-title">IntelliJ IDEA</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------- fim hard-skills ------------------------------------>
+
+<!----------------------------------- certificados ------------------------------------>
+<section class="container mb-5" id="certificados">
+    <h2 class="my-title text-center my-mt">Certificados</h2>
+    <hr/>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    Aprenda a programar em Java com Orientação a Objetos (09/08/2021 a 19/01/2024) 130h
+                </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Java JRE e JDK: compile e execute o seu programa</li>
+                        <li>Java OO: entendendo a Orientação a Objetos</li>
+                        <li>Java Polimorfismo: entenda herança e interfaces</li>
+                        <li>Java Exceções: aprenda a criar, lançar e controlar exceções</li>
+                        <li>Java e java.lang: programe com a classe Object e String</li>
+                        <li>Java e java.util: Coleções, Wrappers e Lambda expressions</li>
+                        <li>Java e java.io: Streams, Reader e Writers</li>
+                        <li>Java Collections: Dominando Listas, Sets e Mapas</li>
+                        <li>Java 8: conheça as novidades dessa versão</li>
+                        <li>TDD e Java: testes automatizados com JUnit</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/degree-java-v142134-142134/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    Linguagem Elixir (07/03/2023 a 23/03/2023) 30h
+                </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Elixir: Sintaxe, Programação funcional e Pattern Matching</li>
+                        <li>Elixir: Recursão, Enums e formas de execução</li>
+                        <li>Elixir Parte 3: Conhecendo o ecossistema Elixir</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/degree-elixir-304339/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    Integre aplicações Java com Banco de dados (04/02/2022 a 18/04/2023) 32h
+                </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Java e JDBC: trabalhando com um banco de dados</li>
+                        <li>Persistência com JPA: Hibernate</li>
+                        <li>Java e JPA: consultas avançadas, performance e modelos complexos</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/degree-banco-dados-java-v475778-475778/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    Java e Spring Boot (02/05/2023 a 16/05/2023) 34h
+                </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Spring Boot 3: desenvolva uma API Rest em Java</li>
+                        <li>Spring Boot 3: aplique boas práticas e proteja uma API Rest</li>
+                        <li>Spring Boot 3: documente, teste e prepare uma API para o deploy</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/degree-spring-boot-3-475714/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    Programação paralela com Threads em Java (21/09/2024 a 25/09/2024) 32h
+                </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Threads em Java 1: programação paralela</li>
+                        <li>Threads em Java 2: programação concorrente avançada</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/degree-threads-java-31269/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    Java: criando a sua primeira aplicação (13/12/2023 a 14/12/2023) 8h
+                </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Primeiro programa em Java</li>
+                        <li>Construindo o catálogo de filmes</li>
+                        <li>Controlando o fluxo da aplicação</li>
+                        <li>Consolidando conhecimentos</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/java-criando-primeira-aplicacao/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    Java: trabalhando com listas e coleções de dados (17/01/2024 a 19/01/2024) 8h
+                </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Coleção de filmes</li>
+                        <li>Construindo objetos</li>
+                        <li>Lista de objetos distintos</li>
+                        <li>Ordenando dados</li>
+                        <li>Consolidando conhecimentos</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/java-listas-colecoes-dados/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                    Java: aplicando a Orientação a Objetos (14/12/2023 a 17/01/2024) 10h
+                </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Modelando o ScreenMatch</li>
+                        <li>Controlando o acesso e a escrita nos dados da aplicação</li>
+                        <li>Reaproveitando características e comportamentos</li>
+                        <li>Aplicando comportamentos em comum</li>
+                        <li>Consolidando conhecimentos</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/java-aplicando-orientacao-objetos/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                    Spring Boot API Rest: Segurança da API, Cache e Monitoramento (01/12/2023 a 13/12/2023)
+                </button>
+            </h2>
+            <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Paginação e ordenação de recursos</li>
+                        <li>Melhorando desempenho com Spring Cache</li>
+                        <li>Proteção com Spring Security</li>
+                        <li>Gerando token com JWT</li>
+                        <li>Autenticação via JWT</li>
+                        <li>Monitoramento com Spring Boot Actuator</li>
+                        <li>Documentação da API com Swagger</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/spring-boot-seguranca-cache-monitoramento/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                    Spring Boot API REST: construa uma API (23/11/2023 a 01/12/2023) 8h
+                </button>
+            </h2>
+            <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Introdução ao Spring Boot</li>
+                        <li>Publicando Endpoints</li>
+                        <li>Usando Spring Data</li>
+                        <li>Trabalhando com POST</li>
+                        <li>Validação com Bean Validation</li>
+                        <li>Métodos PUT, DELETE e tratamento de erro</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/spring-boot-api-rest/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                    Spring MVC: autenticação com Spring Security, API Rest e AJAX (07/11/2023 a 23/11/2023) 10h
+                </button>
+            </h2>
+            <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Autenticação com Spring Security</li>
+                        <li>Provedor de autenticação</li>
+                        <li>Paginação e Cache</li>
+                        <li>Construindo uma API REST</li>
+                        <li>AJAX e Vue.js</li>
+                        <li>Validações com Vue.js</li>
+                        <li>Monitoramento com Interceptadores</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/spring-mvc-security-rest-vuejs-ajax/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                    Spring MVC: crie um web app com Thymeleaf e Bootstrap (05/06/2023 a 07/11/2023) 12h
+                </button>
+            </h2>
+            <div id="collapse12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Conhecendo o Spring MVC</li>
+                        <li>Thymeleaf e Bootstrap</li>
+                        <li>Integração com Spring Data</li>
+                        <li>Trabalhando com formulário</li>
+                        <li>Trabalhando com Bean Validation</li>
+                        <li>Trabalhando com Templates</li>
+                        <li>Formatação e finalização</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/spring-mvc-thymeleaf-bootstrap/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                    Testes de Integração: testes de SQL e DAOs automatizados em Java (16/06/2023 a 31/10/2023) 6h
+                </button>
+            </h2>
+            <div id="collapse13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>O que são testes de integração</li>
+                        <li>Preparando o projeto para os testes</li>
+                        <li>Organização do código de teste</li>
+                        <li>Testando métodos de escrita</li>
+                        <li>Test Data Builder</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/teste-integracao-sql-daos-automatizados-java/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                    Spring Data JPA: Repositórios, Consultas, Projeções e Specifications (18/04/2023 a 16/06/2023) 10h
+                </button>
+            </h2>
+            <div id="collapse14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Primeiro Repositório</li>
+                        <li>Operações CRUD</li>
+                        <li>Derived Queries, JPQL e Native Queries</li>
+                        <li>Paginação e Ordenação</li>
+                        <li>Trabalhando com Projeções</li>
+                        <li>Consultas dinâmicas</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/spring-data-jpa/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                    Mocks em Java: conhecendo o Mockito (05/06/2023 a 12/06/2023) 8h
+                </button>
+            </h2>
+            <div id="collapse15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Testes com Mocks</li>
+                        <li>Iniciando com Mockito</li>
+                        <li>Escrevendo testes com Mockito</li>
+                        <li>Lidando com exceptions</li>
+                        <li>Outras situações</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/mocks-java-mockito/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                    Git e GitHub: repositório, commit e versões (29/09/2022 a 05/10/2022) 8h
+                </button>
+            </h2>
+            <div id="collapse16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Conta no GitHub</li>
+                        <li>Commit, VSCode e equipe</li>
+                        <li>Trabalhando localmente</li>
+                        <li>Adicionando arquivos</li>
+                        <li>Ramificações e merge</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/git-github-repositorio-commit-versoes/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                    PostgreSQL (13/09/2022 a 28/09/2022) 8h
+                </button>
+            </h2>
+            <div id="collapse17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Primeiros passos com PostgreSQL</li>
+                        <li>Executando operações CRUD</li>
+                        <li>Consultas com filtros</li>
+                        <li>Trabalhando com relacionamentos</li>
+                        <li>Usando CASCADE</li>
+                        <li>Avançando com consultas</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/introducao-postgresql-primeiros-passos/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                    Maven: gerenciamento de dependências e build de aplicações Java (03/02/2022 a 04/02/2022) 8h
+                </button>
+            </h2>
+            <div id="collapse18" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Conhecendo o Maven</li>
+                        <li>Projetos com Maven</li>
+                        <li>Dependências no Maven</li>
+                        <li>Build no Maven</li>
+                        <li>Outros recursos</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/maven-gerenciamento-dependencias-build-aplicacoes-java/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                    Java Servlet: autenticação, autorização e o padrão MVC (27/01/2022 a 03/02/2022) 14h
+                </button>
+            </h2>
+            <div id="collapse19" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Criando o controlador</li>
+                        <li>O padrão MVC</li>
+                        <li>Formulário de login</li>
+                        <li>HttpSession</li>
+                        <li>Aplicando filtros</li>
+                        <li>Introdução ao Web Services</li>
+                        <li>Deploy no Jetty</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/servlet-autenticacao-autorizacao-mvc/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                    Java Servlet: programação web Java (13/01/2022 a 27/01/2022) 10h
+                </button>
+            </h2>
+            <div id="collapse20" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Fundamentos da Web e a API de Servlets</li>
+                        <li>Trabalhando com POST e GET</li>
+                        <li>Definindo o nosso modelo</li>
+                        <li>Páginas dinâmicas com JSP</li>
+                        <li>JSTL e Expression Language</li>
+                        <li>Redirecionando o fluxo</li>
+                        <li>Completando o CRUD</li>
+                        <li>Deploy da aplicação</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/servlets-fundamentos-programacao-web-java/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                    HTTP: Entendendo a web por baixo dos panos (18/01/2022 a 19/01/2022) 14h
+                </button>
+            </h2>
+            <div id="collapse21" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>O que é HTTP?</li>
+                        <li>A web segura - HTTPS</li>
+                        <li>Endereços sob seu domínio</li>
+                        <li>O cliente pede e o servidor responde</li>
+                        <li>Depurando a requisição HTTP</li>
+                        <li>Parâmetros da requisição</li>
+                        <li>Serviços na web com REST</li>
+                        <li>HTTP2 - Por uma web mais eficiente</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/http-fundamentos/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                    IntelliJ IDEA: aumente a sua produtividade em projetos Java (10/01/2022 a 12/01/2022) 9h
+                </button>
+            </h2>
+            <div id="collapse22" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Primeiros passos com a IDE</li>
+                        <li>Navegando e refatorando o código</li>
+                        <li>Realizando busca dentro do projeto</li>
+                        <li>Avançando na refatoração de código</li>
+                        <li>Testando e debugando o projeto</li>
+                        <li>Facilitando a escrita de código</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/intellij-idea-truques-para-aumentar-sua-produtividade-em-projetos-java/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                    Git e Github: controle e compartilhe seu código (18/10/2021 a 01/11/2021) 6h
+                </button>
+            </h2>
+            <div id="collapse23" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>O que é Git?</li>
+                        <li>Iniciando os trabalhos</li>
+                        <li>Compartilhando o trabalho</li>
+                        <li>Trabalhando em equipe</li>
+                        <li>Manipulando as versões</li>
+                        <li>Gerando entregas</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/git-github-controle-de-versao/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                    JavaScript na Web: manipule o DOM com JavaScript (13/10/2021 a 18/10/2021) 6h
+                </button>
+            </h2>
+            <div id="collapse24" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Conhecendo o DOM</li>
+                        <li>Comportamento do formulário</li>
+                        <li>Adicionar item na lista</li>
+                        <li>Concluir tarefa</li>
+                        <li>Remover tarefa</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/javascript-manipulacao-dom/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                    HTML5 e CSS3 parte 4: avançando no CSS (08/10/2021 a 13/10/2021) 8h
+                </button>
+            </h2>
+            <div id="collapse25" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Adaptando a página inicial</li>
+                        <li>Conteúdo externo</li>
+                        <li>Melhorando o CSS</li>
+                        <li>Selecionando qualquer coisa</li>
+                        <li>Opacidade e sombra</li>
+                        <li>Design responsivo</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/html5-css3-avancando-css/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+                    HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas (07/10/2021 a 08/10/2021) 8h
+                </button>
+            </h2>
+            <div id="collapse26" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Criando uma nova página</li>
+                        <li>Começando um formulário</li>
+                        <li>Tipos de campos diferentes</li>
+                        <li>Melhorando a semântica</li>
+                        <li>CSS avançado</li>
+                        <li>Estrutura de tabelas</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/html5-css3-formularios-tabelas/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse27" aria-expanded="false" aria-controls="collapse27">
+                    HTML5 e CSS3 parte 2: posicionamento, listas e navegação (05/10/2021 a 07/10/2021) 8h
+                </button>
+            </h2>
+            <div id="collapse27" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Criando uma nova página</li>
+                        <li>Navegação entre páginas</li>
+                        <li>Posicionamento dos elementos</li>
+                        <li>A tag section</li>
+                        <li>Lidando com bordas</li>
+                        <li>Pseudo-classes CSS</li>
+                        <li>Finalizando a página de produtos</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/html5-css3-posicionamento-listas-navegacao/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse28" aria-expanded="false" aria-controls="collapse28">
+                    HTML5 e CSS3 parte 1: crie uma página da Web (27/09/2021 a 05/10/2021) 8h
+                </button>
+            </h2>
+            <div id="collapse28" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Marcação do primeiro texto</li>
+                        <li>Separando o conteúdo e informações</li>
+                        <li>Trabalhando com CSS</li>
+                        <li>Estilizando imagens</li>
+                        <li>Listas e divisões de conteúdo</li>
+                        <li>Finalizando a página</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/html5-css3-primeiros-passos/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse29" aria-expanded="false" aria-controls="collapse29">
+                    Linux I: conhecendo e utilizando o terminal (16/09/2021 a 27/09/2021) 4h
+                </button>
+            </h2>
+            <div id="collapse29" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Trabalhando com arquivos e diretórios</li>
+                        <li>Mais sobre redirecionamento e caracteres coringa no bash</li>
+                        <li>Manipulando, compactando e descompactando arquivos.</li>
+                        <li>Mais sobre compactação e descompactação e comandos do terminal</li>
+                        <li>Edição de arquivos com o VI: inclusão, alteração, exclusão, repetição</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/linux-ubuntu/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse30" aria-expanded="false" aria-controls="collapse30">
+                    Arquitetura de computadores: por trás de como seu programa funciona (13/09/2021 a 15/09/2021) 8h
+                </button>
+            </h2>
+            <div id="collapse30" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Como o computador lê o seu código</li>
+                        <li>Como o computador executa um programa?</li>
+                        <li>Como o computador executa vários programas?</li>
+                        <li>Como a memória funciona?</li>
+                        <li>Como os dados são armazenados?</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/arquitetura-computadores-funcionamento-programa/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse31" aria-expanded="false" aria-controls="collapse31">
+                    JavaScript e HTML: pratique lógica com desenhos, animações e um jogo (23/08/2021 a 13/09/2021) 10h
+                </button>
+            </h2>
+            <div id="collapse31" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Desenhando gráficos com Canvas</li>
+                        <li>Extraindo funções</li>
+                        <li>Interagindo com o usuário</li>
+                        <li>Movendo elementos: animações simples</li>
+                        <li>Nosso primeiro jogo</li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/logica-programacao-pratica-com-desenho-animacoes-em-jogo/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed text-uppercase" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse32" aria-expanded="false" aria-controls="collapse32">
+                    JavaScript e HTML: desenvolva um jogo e pratique lógica de programação (09/08/2021 a 23/08/2021) 16h
+                </button>
+            </h2>
+            <div id="collapse32" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Comece a programar hoje</li>
+                        <li>Comunique-se com o usuário</li>
+                        <li>Torne seu programa dinâmico com variáveis</li>
+                        <li>Crie suas próprias funcionalidades</li>
+                        <li>Pratique resolvendo problemas do seu dia a dia</li>
+                        <li>Execute códigos diferentes dependendo da condição</li>
+                        <li>Repita tarefas</li>
+                        <li>Interaja de maneira diferente com o usuário</li>
+                        <li>Trabalhe com muitos dados</li>
+                        <li></li>
+                    </ul>
+                    <a href="https://cursos.alura.com.br/user/edilbertocmorais/course/logica-programacao-javascript-html/certificate"
+                       target="_blank" class="btn btn-primary mt-3">Certificado</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-------------------------------- fim certificados ----------------------------------->
+
+<!----------------------------- Button ScrollTop -------------------------------------->
+<button type="button" class="scrollTop" title="Botão ScrollTop">
+    <i class="fa-solid fa-chevron-up"></i>
+</button>
+<!----------------------------- FIM Button ScrollTop ---------------------------------->
+
+<!-------------------------------------- contato -------------------------------------->
+<footer class="footer">
+    <hr/>
+    <section class="container-fluid" id="contato">
         <div class="container py-1">
-          <h3 class="text-center my-title mb-5">Informações para contato:</h3>
-          <div class="row mt-1">
-            <div class="col-lg-6">
-              <div class="row">
-                <div class="col-lg-6 my-4 text-center">
-                  <p>
-                    <i class="fa-solid fa-location-dot icon-contato"></i>
-                  </p>
-                  <h3>Endereço</h3>
-                  <p>
-                    Parque Santos Dumont <br />
-                    Guarulhos - SP
-                  </p>
+            <h3 class="text-center my-title mb-5">Informações para contato:</h3>
+            <div class="row mt-1">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-location-dot icon-contato"></i>
+                            </p>
+                            <h3>Endereço</h3>
+                            <p>
+                                Parque Santos Dumont <br/>
+                                Guarulhos - SP
+                            </p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-phone icon-contato"></i>
+                            </p>
+                            <h3>Telefone</h3>
+                            <p>(11) 98148-8561</p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-envelope icon-contato"></i>
+                            </p>
+                            <h3>Email</h3>
+                            <p>edilbertocmorais@gmail.com.br <br/></p>
+                        </div>
+                        <div class="col-lg-6 my-4 text-center">
+                            <p>
+                                <i class="fa-solid fa-clock icon-contato"></i>
+                            </p>
+                            <h3>Atendimento</h3>
+                            <p>
+                                Todos os dias <br/>
+                                15:00 - 21:00
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 my-4 text-center">
-                  <p>
-                    <i class="fa-solid fa-phone icon-contato"></i>
-                  </p>
-                  <h3>Telefone</h3>
-                  <p>(11) 98148-8561</p>
+                <div class="col-lg-6">
+                    <form action="">
+                        <div class="row text-start">
+                            <div class="col-lg-6 my-3">
+                                <label for="nome" class="form-label">Seu nome</label>
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="nome"
+                                        placeholder="Seu nome"
+                                />
+                            </div>
+
+                            <div class="col-lg-6 my-2">
+                                <label for="email" class="form-label">Seu email</label>
+                                <input
+                                        type="email"
+                                        class="form-control"
+                                        id="email"
+                                        placeholder="Seu nome"
+                                />
+                            </div>
+
+                            <div class="col-lg-6 my-2">
+                                <label for="fone" class="form-label">Seu Telefone</label>
+                                <input
+                                        type="tel"
+                                        class="form-control"
+                                        id="fone"
+                                        placeholder="(xx) 9999-9999"
+                                />
+                            </div>
+
+                            <div class="col-lg-6 my-2">
+                                <label for="mensagem" class="form-label">Assunto</label>
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="mensagem"
+                                        placeholder="Assunto"
+                                />
+                            </div>
+
+                            <div class="col-lg-12 my-2">
+                                <label for="nome" class="form-label">Mensagem</label>
+                                <label for="mensagemm"></label
+                                ><textarea
+                                    name="mensagemm"
+                                    id="mensagemm"
+                                    placeholder="Sua mensagem"
+                                    class="form-control"
+                            ></textarea>
+                            </div>
+
+                            <div class="col-lg-12 my-2 d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary">
+                                    Enviar mensagem
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-lg-6 my-4 text-center">
-                  <p>
-                    <i class="fa-solid fa-envelope icon-contato"></i>
-                  </p>
-                  <h3>Email</h3>
-                  <p>edilbertocmorais@gmail.com.br <br /></p>
+                <div class="rodape mt-5">
+                    <p>Desenvolvido por Edilberto Cunha de Morais</p>
                 </div>
-                <div class="col-lg-6 my-4 text-center">
-                  <p>
-                    <i class="fa-solid fa-clock icon-contato"></i>
-                  </p>
-                  <h3>Atendimento</h3>
-                  <p>
-                    Todos os dias <br />
-                    15:00 - 21:00
-                  </p>
-                </div>
-              </div>
             </div>
-            <div class="col-lg-6">
-              <form action="">
-                <div class="row text-start">
-                  <div class="col-lg-6 my-3">
-                    <label for="nome" class="form-label">Seu nome</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="nome"
-                      placeholder="Seu nome"
-                    />
-                  </div>
-
-                  <div class="col-lg-6 my-2">
-                    <label for="email" class="form-label">Seu email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Seu nome"
-                    />
-                  </div>
-
-                  <div class="col-lg-6 my-2">
-                    <label for="fone" class="form-label">Seu Telefone</label>
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="fone"
-                      placeholder="(xx) 9999-9999"
-                    />
-                  </div>
-
-                  <div class="col-lg-6 my-2">
-                    <label for="mensagem" class="form-label">Assunto</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="mensagem"
-                      placeholder="Assunto"
-                    />
-                  </div>
-
-                  <div class="col-lg-12 my-2">
-                    <label for="nome" class="form-label">Mensagem</label>
-                    <label for="mensagemm"></label
-                    ><textarea
-                      name="mensagemm"
-                      id="mensagemm"
-                      placeholder="Sua mensagem"
-                      class="form-control"
-                    ></textarea>
-                  </div>
-
-                  <div class="col-lg-12 my-2 d-flex justify-content-end">
-                    <button type="submit" class="btn btn-primary">
-                      Enviar mensagem
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="rodape mt-5">
-              <p>Desenvolvido por Edilberto Cunha de Morais</p>
-            </div>
-          </div>
         </div>
-      </section>
-    </footer>
-    <!----------------------------------- fim contato -------------------------------------->
+    </section>
+</footer>
+<!----------------------------------- fim contato -------------------------------------->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
         var myModal = new bootstrap.Modal(
-          document.getElementById("exampleModal")
+            document.getElementById("exampleModal")
         );
         myModal.show();
-      });
-    </script>
-    <script src="./assets/js/script.js"></script>
-  </body>
+    });
+</script>
+<script src="./assets/js/script.js"></script>
+</body>
 </html>
