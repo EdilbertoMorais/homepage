@@ -8,5 +8,6 @@
     <orderEntry type="library" name="bootstrap-icons" level="application" />
     <orderEntry type="library" name="font-awesome" level="application" />
     <orderEntry type="library" name="bootstrap-icons" level="application" />
+    <orderEntry type="library" name="@emailjs/browser" level="application" />
   </component>
 </module>
