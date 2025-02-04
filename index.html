@@ -33,6 +33,52 @@
             crossorigin="anonymous"
     />
 
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("mRKAj6_e40Z1FSj0i");
+        }())
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var myModal = new bootstrap.Modal(
+                document.getElementById("exampleModal")
+            );
+            myModal.show();
+        });
+
+        document
+            .getElementById("contact-form")
+            .addEventListener("submit", function (event) {
+                event.preventDefault(); // Previne o envio do formulário padrão
+
+                // Coleta os dados do formulário
+                const templateParams = {
+                    nome: document.getElementById("nome").value,
+                    email: document.getElementById("email").value,
+                    fone: document.getElementById("fone").value,
+                    assunto: document.getElementById("assunto").value,
+                    mensagem: document.getElementById("mensagem").value,
+                };
+
+                // Envia o e-mail via EmailJS
+                emailjs
+                    .send("service_iglltzy", "template_1v0cws9", templateParams)
+                    .then(
+                        function (response) {
+                            console.log("SUCCESS!", response.status, response.text);
+                            alert("Mensagem enviada com sucesso!");
+                        },
+                        function (error) {
+                            console.log("FAILED...", error);
+                            alert("Falha ao enviar a mensagem.");
+                        }
+                    );
+            });
+    </script>
+
     <!-- A minha CSS -->
     <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
