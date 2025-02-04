@@ -37,46 +37,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
+
             emailjs.init("mRKAj6_e40Z1FSj0i");
         }())
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var myModal = new bootstrap.Modal(
-                document.getElementById("exampleModal")
-            );
-            myModal.show();
-        });
-
-        document
-            .getElementById("contact-form")
-            .addEventListener("submit", function (event) {
-                event.preventDefault(); // Previne o envio do formulário padrão
-
-                // Coleta os dados do formulário
-                const templateParams = {
-                    nome: document.getElementById("nome").value,
-                    email: document.getElementById("email").value,
-                    fone: document.getElementById("fone").value,
-                    assunto: document.getElementById("assunto").value,
-                    mensagem: document.getElementById("mensagem").value,
-                };
-
-                // Envia o e-mail via EmailJS
-                emailjs
-                    .send("service_iglltzy", "template_1v0cws9", templateParams)
-                    .then(
-                        function (response) {
-                            console.log("SUCCESS!", response.status, response.text);
-                            alert("Mensagem enviada com sucesso!");
-                        },
-                        function (error) {
-                            console.log("FAILED...", error);
-                            alert("Falha ao enviar a mensagem.");
-                        }
-                    );
-            });
     </script>
 
     <!-- A minha CSS -->
@@ -143,44 +106,49 @@
 <!--------------------------------- fim header ---------------------------------------->
 
 <!--------------------------------- janela modal -------------------------------------->
-<!--<div-->
-<!--        class="modal fade"-->
-<!--        id="exampleModal"-->
-<!--        tabindex="-1"-->
-<!--        aria-labelledby="exampleModalLabel"-->
-<!--        aria-hidden="true"-->
-<!--&gt;-->
-<!--    <div class="modal-dialog">-->
-<!--        <div class="modal-content">-->
-<!--            <div class="modal-header">-->
-<!--                <h1 class="modal-title fs-3" id="exampleModalLabel">Atenção</h1>-->
-<!--                <button-->
-<!--                        type="button"-->
-<!--                        class="btn-close"-->
-<!--                        data-bs-dismiss="modal"-->
-<!--                        aria-label="Close"-->
-<!--                ></button>-->
-<!--            </div>-->
-<!--            <div class="modal-body">-->
-<!--                Esta página está em construção e ainda há muito a fazer.-->
-<!--                <p>-->
-<!--                    Ela está disponível em produção para que você possa acompanhar o-->
-<!--                    desenvolvimento do projeto.-->
-<!--                </p>-->
-<!--            </div>-->
+<div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalLabel">Atenção</h1>
+                <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                ></button>
+            </div>
+            <div class="modal-body">
+                Seja bem-vindo ao meu portfólio.
+                <p>
+                    Está pagina foi desenvolvida utilizando:
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </p>
+            </div>
 
-<!--            <div class="modal-footer">-->
-<!--                <button-->
-<!--                        type="button"-->
-<!--                        class="btn btn-secondary"-->
-<!--                        data-bs-dismiss="modal"-->
-<!--                >-->
-<!--                    Fechar-->
-<!--                </button>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+            <div class="modal-footer">
+                <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                >
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 <!-------------------------------- fim janela modal ----------------------------------->
 
 <!-------------------------------------- sobre ---------------------------------------->
@@ -247,7 +215,7 @@
                 <h2>Baixar Currículo em PDF</h2>
                 <p>Clique no botão abaixo para baixar o documento</p>
                 <a
-                        href="./assets/outros_arquivos/Edilberto%20Cunha%20-%20Analista%20Desenvolvedor%20Sistemas.pdf"
+                        href="./assets/outros_arquivos/Edilberto_Cunha_Desenvolvedor_Sistemas.pdf"
                         class="btn btn-primary"
                         download
                 >
@@ -1850,9 +1818,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <form action="">
+                    <form id="contact-form" action="">
                         <div class="row text-start">
-                            <div class="col-lg-6 my-3">
+                            <div class="col-lg-6 my-2">
                                 <label for="nome" class="form-label">Seu nome</label>
                                 <input
                                         type="text"
@@ -1883,21 +1851,21 @@
                             </div>
 
                             <div class="col-lg-6 my-2">
-                                <label for="mensagem" class="form-label">Assunto</label>
+                                <label for="assunto" class="form-label">Assunto</label>
                                 <input
                                         type="text"
                                         class="form-control"
-                                        id="mensagem"
+                                        id="assunto"
                                         placeholder="Assunto"
                                 />
                             </div>
 
                             <div class="col-lg-12 my-2">
                                 <label for="nome" class="form-label">Mensagem</label>
-                                <label for="mensagemm"></label
+                                <label for="mensagem"></label
                                 ><textarea
-                                    name="mensagemm"
-                                    id="mensagemm"
+                                    name="mensagem"
+                                    id="mensagem"
                                     placeholder="Sua mensagem"
                                     class="form-control"
                             ></textarea>
@@ -1920,6 +1888,38 @@
 </footer>
 <!----------------------------------- fim contato -------------------------------------->
 
+<script>
+    document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+            event.preventDefault(); // Previne o envio do formulário padrão
+
+            // Coleta os dados do formulário
+            const templateParams = {
+                nome: document.getElementById("nome").value,
+                email: document.getElementById("email").value,
+                fone: document.getElementById("fone").value,
+                assunto: document.getElementById("assunto").value,
+                mensagem: document.getElementById("mensagem").value,
+            };
+
+            // Envia o e-mail via EmailJS
+            emailjs
+                .send("service_fo1nev8", "template_lrefy8k", templateParams)
+                .then(
+                    function (response) {
+                        console.log("SUCCESS!", response.status, response.text);
+                        alert("Mensagem enviada com sucesso!");
+                        document.getElementById("contact-form").reset();
+                    },
+                    function (error) {
+                        console.log("FAILED...", error);
+                        alert("Falha ao enviar a mensagem.");
+                    }
+                );
+        });
+</script>
+
 <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -1934,6 +1934,7 @@
         myModal.show();
     });
 </script>
+
 <script src="./assets/js/script.js"></script>
 </body>
 </html>
